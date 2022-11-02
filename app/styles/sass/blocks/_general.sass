@@ -1,0 +1,248 @@
+.section
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: center
+	align-items: flex-start
+	padding: 0 30px
+.container
+	position: relative
+	display: flex
+	width: 100%
+	max-width: 1760px
+	justify-content: center
+	align-items: flex-start
+.section__header
+	height: 100vh
+	background-image: url(#{$assetImages}/section__header__bg.png)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+.section__topMenu
+	position: relative
+	width: 100%
+	justify-content: space-between
+	align-items: center
+	flex-flow: row nowrap
+	display: flex
+.topMenu__nav
+	position: relative
+	width: 100%
+	max-width: 771px
+	display: flex
+	justify-content: center
+	align-items: center
+.topMenu
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: space-around
+	align-items: center
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.topMenuItem
+	position: relative
+	width: 100%
+	display: flex
+	flex: 1 1 auto
+	align-items: center
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	justify-content: space-around
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+	transition: all .3s
+	&:hover
+		color: $accent
+.topMenuItem__link
+	position: absolute
+	display: flex
+	justify-content: space-around
+	width: 100%
+	left: 0
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+
+
+.topMenu__contacts
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	max-width: 260px
+	align-items: center
+.topMenuItem__accordion
+	transition: all 1s
+	&:hover
+		.internalList
+			display: flex
+.internalList
+	position: absolute
+	top: 60px
+	left: 30%
+	display: none	
+	position: relative
+	width: 100%
+	flex-flow: column nowrap
+.topMenuItem.topMenuItem__accordion
+	.topMenuItem__link
+		&::after
+			transform-origin: 3px 11px
+			transition: all .5s
+			position: absolute
+			left: 100px
+			top: -2px	
+			content: url(#{$assetImages}/topMenuItem__before.svg)
+	&:hover
+		.topMenuItem__link
+			color: #fff
+			&::after
+				transition: all .5s
+				transform: rotate(180deg)
+				transform-origin: 3px 11px
+				
+.internalList__item
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.internalList__link
+	position: relative
+	width: 100%
+	margin-bottom: 5px
+	font-weight: 400
+	font-size: 12px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF		
+.topMenu__contacts__phone
+	width: 100%
+	white-space: nowrap
+	font-weight: 500
+	font-size: 18px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.topMenu__contacts__search
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	align-items: center
+.active
+	display: flex !important
+.topMenu__overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: auto
+	background: #fff
+	display: none
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	width: 100%
+	max-width: 951px
+.overlay__clase
+	height: 28px
+	width: 28px
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 80px
+.overlay__header
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	border-bottom: 1px solid #E6E6EB
+	padding: 0 40px
+.overlay__header__logo
+	width: 100%
+	max-width: 336px
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.overlay__header__search__wrapp
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	max-width: 467px
+.overlay__header__search__img
+	position: absolute
+	left: 18px
+#overlay__header__search
+	background: #F5F5F7
+	border-radius: 8px
+	border: none
+	height: 54px
+	padding: 10px 10px 12px 56px
+	width: 100%
+	&::placeholder
+		font-style: normal
+		font-weight: 300
+		font-size: 20px
+		line-height: 150%
+		text-align: left
+		color: #4F4F56
+.overlay__menu
+	position: relative
+	width: 100%
+	max-width: 336px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	padding: 48px 40px 0 40px
+	border-right: 1px solid #E6E6EB
+.overlay__list
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	flex-flow: column nowrap
+	
+.overlay__item
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	height: 54px
+	width: 100%
+	&:hover
+		.overlay__internalList
+			display: flex
+.overlay__item__link
+	position: absolute
+	width: 100%
+	top: 0
+	left: 0
+	white-space: nowrap
+.overlay__internalList
+	display: none
+
+
+
+

@@ -1,0 +1,22 @@
+//`@media (max-width: 1400px) { ...}
+@include media-breakpoint-down(xxl)
+	.topMenu__contacts
+		max-width: 200px
+	.topMenu__nav
+		max-width: 680px
+	.topMenuItem.topMenuItem__accordion
+		.topMenuItem__link
+			&::after
+				left: 93px
+
+//`@media (max-width:  1200px) { ...}
+@include media-breakpoint-down(xl)
+
+//`@media (max-width: 992px) { ...}
+@include media-breakpoint-down(lg)
+
+//`@media (max-width: 768px) { ...}
+@include media-breakpoint-down(md)
+
+//`@media (max-width: 576px) { ...}
+@include media-breakpoint-down(sm)

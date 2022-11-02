@@ -1,0 +1,89 @@
+// USER VARIABLES SECTION
+
+$accent: #0071E3 // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: SFPro, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+$assetImages: "../images/dist"
+// mask-image: url(#{$assetImages}/facebook--icon.svg)
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/animate.css/animate'
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+@include font('SFPro', Black, 900, '../fonts/SFPro/SFProDisplay-Black.woff2')
+@include font('SFPro', italic, 900, '../fonts/SFPro/SFProDisplay-BlackItalic.woff2')
+@include font('SFPro', bold, 700, '../fonts/SFPro/SFProDisplay-Bold.woff2')
+@include font('SFPro', italic, 700, '../fonts/SFPro/SFProDisplay-BoldItalic.woff2')
+@include font('SFPro', Semi Bold, 600, '../fonts/SFPro/SFProDisplay-Semibold.woff2')
+@include font('SFPro', italic, 600, '../fonts/SFPro/SFProDisplay-SemiboldItalic.woff2')
+@include font('SFPro', Medium, 500, '../fonts/SFPro/SFProDisplay-Medium.woff2')
+@include font('SFPro', italic, 500, '../fonts/SFPro/SFProDisplay-MediumItalic.woff2')
+@include font('SFPro', Regular, 400, '../fonts/SFPro/SFProDisplay-Regular.woff2')
+@include font('SFPro', italic, 400, '../fonts/SFPro/SFProDisplay-RegularItalic.woff2')
+@include font('SFPro', Light, 200, '../fonts/SFPro/SFProDisplay-Light.woff2')
+@include font('SFPro', italic, 200, '../fonts/SFPro/SFProDisplay-LightItalic.woff2')
+@include font('SFPro', thin, 100, '../fonts/SFPro/SFProDisplay-Thin.woff2')
+@include font('SFPro', italic, 100, '../fonts/SFPro/SFProDisplay-ThinItalic.woff2')
+
+
+
+
+
+
+
+// GENERAL CSS SETTINGS
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+ul
+	li
+		list-style-type: none
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	a
+		text-decoration: none
+		transition: all .3s
+		&:hover
+			color: $accent
+
