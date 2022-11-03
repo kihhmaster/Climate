@@ -10,6 +10,7 @@
 	display: flex
 	width: 100%
 	max-width: 1760px
+	flex-flow: column nowrap
 	justify-content: center
 	align-items: flex-start
 .section__header
@@ -19,7 +20,9 @@
 	background-repeat: no-repeat
 	background-size: cover
 .section__topMenu
-	position: relative
+	position: absolute
+	top: 0
+	left: 0
 	width: 100%
 	justify-content: space-between
 	align-items: center
@@ -244,20 +247,491 @@
 	display: flex
 	justify-content: flex-start
 	align-items: flex-start
-	height: 54px
+	height: 36px
+	margin-bottom: 24px
 	width: 100%
-	&:hover
+	transition: all .5s
+	font-weight: 300
+	font-size: 24px
+	line-height: 150%
+	color: $textcolor
+	&:hover 
 		.overlay__internalList
 			display: flex
+		
 .overlay__item__link
 	position: absolute
 	width: 100%
 	top: 0
 	left: 0
 	white-space: nowrap
+	font-style: normal
+	font-weight: 300
+	font-size: 24px
+	line-height: 150%
+	color: $textcolor
+	transition: color .5s
 .overlay__internalList
 	display: none
+.overlay__accordion
+	transition: all .5s
+	&::before	
+		position: absolute
+		right: 0
+		top: 13px
+		content: url(#{$assetImages}/overlay__accordion__img.svg)
+		transition: all .5s
+		transform: rotate(315deg)
+		transform-origin: 3px 11px
+	&:hover
+		&::before	
+			transition: all .5s
+			transform: rotate(340deg)
+			transform-origin: 3px 11px
+		// .overlay__internalList
+		// 	display: flex
+.overlay__internalList
+	display: flex
+	position: absolute
+	right: -330px
+	top: 0
+	flex-flow: column nowrap
+	align-items: flex-start
+	justify-content: flex-start
+.overlay_internalList__item
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: start
+	align-items: flex-start
+.overlay_internalList__item__link
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	font-weight: 300
+	font-size: 24px
+	line-height: 150%
+	color: $textcolor
+.section__header
+	.container
+		justify-content: center
+		align-items: flex-start
+		height: 100vh
+.header__content
+	position: relative
+	width: 100%
+	display: flex
+	color: #fff
+	justify-content: space-between
+	align-items: center
+.header__content__title
+	font-weight: 400
+	font-size: 32px
+	line-height: 160%
+.header__content__desc
+	font-weight: 200
+	font-size: 80px
+	line-height: 125%
+	text-align: right
+
+//section__categories
+.section__categories
+	background: #fff
+	padding-top: 54px
+	padding-bottom: 84px
+.categories
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-around
+	align-items: center
+.categories__item
+	position: relative
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+.categories__item__img
+	position: relative
+	width: 100%
+	height: 131px
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		object-fit: cover
+		object-position: 50% 50%
+.categories__item__desc
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	margin-top: 35px
+.categories__item__title
+	color: $textcolor
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 150%
+	text-align: center
+.categories__item__models
+	font-style: normal
+	font-weight: 300
+	font-size: 16px
+	line-height: 150%
+	text-align: center
+	color: #4F4F56
+.categories__item__button
+	position: relative
+	margin-top: 37px
+	width: 40px
+	height: 40px
+	background: #E6E6EB
+	border-radius: 50%
+	margin-left: auto
+	margin-right: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: background .5s
+.categories__item__button__img
+	align-self: center
+.categories__item
+	transition: all .5s
+	&:hover
+		.categories__item__title
+			transition: all .5s
+			color: transparent
+			background-clip: text
+			background-image: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%)
+		.categories__item__button
+			transition: background .5s
+			background: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%)
+//section__categories
+.section
+	padding-top: 70px
+	padding-bottom: 70px
+.section__header
+	padding-top: 0
+//section__newOffer
+.newOffer
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+.section__newOffer
+	background: #F5F5F7
+.newOffer__top
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.newOffer__title
+	position: relative
+	width: 100%
+	color: $textcolor
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+.newOffer__button,.button__blue
+	position: relative
+	width: 100%
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 150%
+	text-align: right
+	color: #0071E3
+	trarsition: all .5s
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/newOffer__button__img.svg)
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s
+.newOffer__lists
+	position: relative
+	display: flex
+	width: 100%
+	flex-flow: row wrap
+	justify-content: center
+	align-items: flex-start
+	margin-top: 40px
+.newOffer__item
+	position: relative
+	width: 100%
+	max-width: 400px
+	background: #fff
+	display: flex
+	margin: 10px
+	flex-flow: column nowrap
+	padding-top: 44px 
+	padding-bottom: 34px
+.newOffer__item__lebel
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 5px 8px 2px 8px
+	top: 20px
+	left: 0
+	z-index: 2
+	width: auto
+	background: #7FB33C
+	font-style: normal
+	font-weight: 500
+	font-size: 11px
+	line-height: 170%
+	text-align: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.newOffer__item__img
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		object-fit: cover
+		object-position: 50% 50%
+.newOffer__item__line
+	position: relative
+	width: 100%
+	display: flex
+	margin-top: 20px
+.newOffer__item__line__dote
+	position: relative
+	width: 100%
+	max-width: 47px
+	margin-left: 16px
+	margin-right: 16px
+	display: flex
+	justify-content: center
+	align-items: center
+	.dote__wrapp
+		position: absolute
+		display: flex
+		bottom: -1px
+	span
+		position: relative
+		display: flex
+		border-radius: 50%
+		width: 5px
+		height: 5px
+		margin-top: 20px
+		background: #D2D2D7
+		margin-left: 8px
+		margin-right: 8px
+
+.newOffer__item__line__left,.newOffer__item__line__right
+	position: relative
+	width: 100%
+	border-bottom: 2px solid #E6E6EB
+.newOffer__item__desc
+	position: relative
+	margin-top: 20px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding-left: 24px
+	padding-right: 24px
+.newOffer__item__desc__left
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+.newOffer__item__desc__title__1,.newOffer__item__desc__title__2
+	color: $textcolor
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 160%
+	align-items: center
+	letter-spacing: 0.03em
+	white-space: nowrap
+	span
+		font-weight: 500
+.newOffer__item__desc__right
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-end
+.newOffer__item__desc__availability
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+.inStock
+	color: #7FB33C
+.outOfStock
+	color: #A2A2AD
+.newOffer__item__desc__price
+	font-style: normal
+	font-weight: 600
+	font-size: 16px
+	line-height: 170%
+	text-align: right
+	letter-spacing: 0.03em
+	color: #1D1D1F
+.newOffer__item__lebel__blue
+	background: #0038FF
+.newOffer__item__lebel__red
+	background: #FF0000
+//section__newOffer
+
+
+//accordion
+	
+.accordion 
+	width: 100%
+	overflow: hidden
+	margin-top: $gutter	
+	&__intro 
+		position: relative
+		cursor: pointer
+	&__content 
+		padding: 0 20px
+		max-height: 0
+		overflow: hidden
+		will-change: max-height
+		transition: all 0.25s ease-out
+		color: #000
+		opacity: 0
+	&__active
+		padding-bottom: 30px
+		.accordion__intro 
+			opacity: 1
+			transition: background .3s ease
+			border-bottom: 2px solid #1D1D1F
+			.accordion__intro__button
+				opacity: 1
+		.accordion__content 
+			opacity: 1
+			padding: 31px 31px 31px 0
+			p
+				margin-left: 120px
+				font-style: normal
+				font-weight: 400
+				font-size: 18px
+				line-height: 160%	
+				color: #4F4F56
+				text-align: left
+				width: 100%
+				max-width: 500px
+.accordion__intro	
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-end	
+	padding-top: 32px
+	padding-bottom: 32px
+	border-bottom: 2px solid #E6E6EB
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 160%
+	color: #1D1D1F
+	span
+		margin-right: 96px 
+	&:hover
+		transition: background .3s ease
+		border-bottom: 2px solid #1D1D1F
+		.accordion__intro__button
+			opacity: 1
+.accordion__intro__button
+	opacity: 0.5
+	font-style: normal
+	font-weight: 300
+	font-size: 16px
+	line-height: 160%
+	text-align: right
+	color: #1D1D1F
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/accordion__intro__button__img.svg)
+.services__title
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #1D1D1F		
+.accordion__content
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.services__accordion__content	
+	position: relative
+	display: flex
+	align-self: center
+	height: 100%
+.accordion__content 
+	opacity: 0
+	p
+		margin-left: 120px
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 160%	
+		color: #4F4F56
+		text-align: left
+		width: 100%
+		max-width: 500px
+@keyframes rotationOpen 
+	0% 
+		transform-origin: 40% 15%
+		transform: rotate(0deg)
+	100% 
+		transform-origin: 40% 15%
+		transform: rotate(180deg)
+
+@keyframes rotationClose
+	0% 
+		transform-origin: 40% 15%
+		transform: rotate(180deg)
+	100% 
+		transform-origin: 40% 15%
+		transform: rotate(0deg)
+
+.section__title
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #1D1D1F	
 
 
 
-
+//accordion
+//advantages
+.advantages__header
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: flex-start
+//advantages
