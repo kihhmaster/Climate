@@ -9,7 +9,7 @@
 	position: relative
 	display: flex
 	width: 100%
-	max-width: 1760px
+	max-width: 1240px
 	flex-flow: column nowrap
 	justify-content: center
 	align-items: flex-start
@@ -19,6 +19,8 @@
 	background-position: top center
 	background-repeat: no-repeat
 	background-size: cover
+	.container	
+		max-width: 1760px
 .section__topMenu
 	position: absolute
 	top: 0
@@ -341,6 +343,8 @@
 	background: #fff
 	padding-top: 54px
 	padding-bottom: 84px
+	.container
+		max-width: 1760px
 .categories
 	position: relative
 	width: 100%
@@ -471,7 +475,7 @@
 .newOffer__item
 	position: relative
 	width: 100%
-	max-width: 400px
+	max-width: 370px
 	background: #fff
 	display: flex
 	margin: 10px
@@ -727,11 +731,263 @@
 
 //accordion
 //advantages
+.section__advantages
+	background: #F5F5F7
+	.container
+		justify-content: center
+		align-items: flex-start
+.advantages
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	width: 100%
+	max-width: 1240px
+	align-self: center
+	flex-flow: column nowrap
 .advantages__header
 	position: relative
 	width: 100%
 	display: flex
-	flex-flow: column nowrap
+	flex-flow: row nowrap
+	justify-content: center
+	align-items: center
+.advantages__title
+	margin-bottom: 40px
+.advantages__header__item
+	position: relative
+	width: 100%
+	max-width: 610px
+	height: 593px
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	background: #fff
+	flex-flow: column
+	padding: 56px
+	&:hover
+		.advantages__header__item__button
+			text-decoration: underline
+			trarsition: all .5s
+	&:first-child
+		margin-right: 20px
+.advantages__header__item__title
+	font-style: normal
+	font-weight: 500
+	font-size: 32px
+	line-height: 135%
+	text-align: center
+	color: #1D1D1F	
+	text-align: center
+	width: 100%
+	position: relative
+	max-width: 420px
+	z-index: 1
+.advantages__header__item__img
+	position: absolute
+	bottom: 0
+	left: 0
+	z-index: 0
+	width: 100%
+	box-sizing: border-box
+	object-fit: cover
+	object-position: bottom center
+.advantages__header__item__button
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	margin-top: 40px
+	z-index: 1
+.advantages__content
+	position: relative
+	width: 100%
+	display: flex
 	justify-content: center
 	align-items: flex-start
+	background: #fff
+	margin-top: 20px
+	padding: 72px 88px
+.advantages__content__item
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	align-items: center
+	width: 100%
+	max-width: 300px 
+	text-align: center
+	margin-right: 20px
+	margin-left: 40px
+	&:hover
+		.advantages__content__button
+			text-decoration: underline
+			trarsition: all .5s
+.advantages__content__icon
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	img
+		width: 44px
+		height: 44px
+		align-self: center
+.advantages__content__title
+	position: relative
+	width: 100%
+	text-align: center
+	margin-top: 26px
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height: 135%
+	text-align: center
+	color: #1D1D1F
+.advantages__content__desc
+	position: relative
+	width: 100%
+	text-align: center
+	margin-top: 14px
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 135%
+	text-align: center
+	color: #1D1D1F
+.advantages__content__button
+	font-size: 18px
+	text-align: center
+	margin-top: 44px
+
 //advantages
+
+//publications
+.publications__top
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	margin-bottom: 40px
+.publication
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-evenly
+	align-items: flex-start
+	flex-flow: row wrap
+.publication__item
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	text-align: left
+	width: 100%
+	max-width: 295px
+	transition: all .5s
+	&:hover
+		.publication__item__desc
+			color: #0071E3
+			transition: all .5s
+		.categories__item__button
+			transition: background .5s
+			background: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%)
+.publication__item__img
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	border: 2px solid #E6E6EB
+	box-sizing: border-box
+	img
+		position: relative
+		display: flex
+		width: 100%
+		box-sizing: border-box
+		object-fit: cover
+.publication__item__date
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	text-align: left
+	margin-top: 16px
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 170%
+	letter-spacing: 0.03em
+	color: #6C6C77
+.publication__item__desc
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	text-align: left
+	margin-top: 24px
+	font-style: normal
+	font-weight: 500
+	font-size: 18px
+	line-height: 170%
+	color: #1D1D1F
+.publication__item__button.categories__item__button
+	background: #fff
+
+.publiction__expanded
+	position: relative
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	margin-top: 76px
+.publiction__expanded__item
+	position: relative
+	flex-flow: row nowrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 300px
+	width: 100%
+	margin-bottom: 64px
+.publiction__expanded__item__desc
+	position: relative
+	width: 100%
+	max-width: 738px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	text-align: left
+
+.publiction__expanded__item__desc__title
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 300
+	font-size: 32px
+	line-height: 135%
+	color: #1D1D1F
+	margin-bottom: 32px
+.publiction__expanded__item__desc__text
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 15px
+	line-height: 170%
+	color: #6C6C77
+.publiction__expanded__item__img
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	object-fit: cover
+	width: 100%
+	max-width: 400px
+	height: 100%
+.publiction__expanded__item__reverse
+	flex-flow: row-reverse nowrap
+//publications
