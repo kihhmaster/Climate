@@ -2,23 +2,12 @@
 	transition: all .5s;
 	color: transparent;
 	background-clip: text;
-	// -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
+
 	background-image: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
 }
 .overlay_internalList__item:hover .overlay_internalList__item__link{
 	transition: all .5s;
 	color: transparent;
 	background-clip: text;
-	// -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
 	background-image: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
 }
-// .overlay__accordion:hover .overlay__internalList {
-//   -webkit-animation-name: fadeInLeft;
-//   animation-name: fadeInLeft;
-// }
-// .overlay__accordion .overlay__internalList {
-//   -webkit-animation-name: fadeOutLeft;
-//   animation-name: fadeOutLeft;
-// }

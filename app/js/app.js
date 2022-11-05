@@ -1,16 +1,39 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/node_modules/jquery/dist/jquery.min.js'
+import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode } from 'swiper'
+Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode] )
 
 document.addEventListener('DOMContentLoaded', () => {
 
+	//swiper-container
+	const newOfferSliderMob = new Swiper('.newOffer__sliderMob', {
+		slidesPerView: 1.5,
+		spaceBetween: 15,
+		loop: false,
+		pagination: false,
+	
+	})
+	const publicationsSliderMob = new Swiper('.publications__sliderMob', {
+		slidesPerView: 1.5,
+		spaceBetween: 15,
+		loop: false,
+		pagination: false,
+	
+	})
+	//swiper-container
+
 	// Custom JS
 	$('.overlay__accordion').hover(function(){
-		$(this).children('.overlay__internalList').removeClass('animate__fadeOutLeft');
-    $(this).children('.overlay__internalList').addClass('animate__fadeInLeft');
+		$(this).removeClass('accordion__active');
+		$(this).addClass('accordion__active');
+		$(this).children('.overlay__internalList').removeClass('animate__fadeOut');
+    $(this).children('.overlay__internalList').addClass('animate__fadeIn');
 		}, function(){
-		$(this).children('.overlay__internalList').removeClass('animate__fadeInLeft');
-		$(this).children('.overlay__internalList').addClass('animate__fadeOutLeft');
+		$(this).addClass('accordion__active');
+		$(this).removeClass('accordion__active');
+		$(this).children('.overlay__internalList').removeClass('animate__fadeIn');
+		$(this).children('.overlay__internalList').addClass('animate__fadeOut');
 	});
 	// accordions
 	const accordions = document.querySelectorAll(".accordion");
@@ -43,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// accordions
-	let topMenuContactsSearch = document.querySelectorAll(".topMenu__contacts__search")
-	if(topMenuContactsSearch !== null) {
+	let menu = document.querySelectorAll(".menu")
+	if(menu !== null) {
 		let overlay = document.querySelectorAll(".topMenu__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase")
 
@@ -58,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		}
 
-		topMenuContactsSearch.forEach(item => {
+		menu.forEach(item => {
 			item.addEventListener("click", ()=>{
 				overlay.forEach(i => {
 					i.classList.add("active");
@@ -76,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			function hasAncestor(el, ancestor) {
 				return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
 			}
-			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, topMenuContactsSearch[0])) {
+			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, menu[0])) {
 				closeOverlay();
 			}
 		})

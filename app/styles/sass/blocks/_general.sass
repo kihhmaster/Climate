@@ -21,11 +21,17 @@
 	background-size: cover
 	.container	
 		max-width: 1760px
+.publications__sliderMob
+	display: none
 .section__topMenu
+	background: #1D1D1F
 	position: absolute
+	z-index: 5
 	top: 0
 	left: 0
 	width: 100%
+	max-width: 1760px
+	padding: 0 30px
 	justify-content: space-between
 	align-items: center
 	flex-flow: row nowrap
@@ -52,15 +58,16 @@
 	color: #FFFFFF
 .topMenuItem
 	position: relative
-	width: 100%
 	display: flex
-	flex: 1 1 auto
+	flex: 1 0 auto
+	cursor: pointer
 	align-items: center
 	font-weight: 400
 	font-size: 14px
 	line-height: 135%
 	justify-content: space-around
 	align-items: center
+	white-space: nowrap
 	letter-spacing: 0.03em
 	text-transform: uppercase
 	color: #FFFFFF
@@ -68,9 +75,9 @@
 	&:hover
 		color: $accent
 .topMenuItem__link
-	position: absolute
+	position: relative
 	display: flex
-	justify-content: space-around
+	justify-content: center
 	width: 100%
 	left: 0
 	font-weight: 400
@@ -80,8 +87,16 @@
 	letter-spacing: 0.03em
 	text-transform: uppercase
 	color: #FFFFFF
-
-
+.humburger
+	display: none
+.overlay__header__logo__img
+	position: relative
+	width: 100%
+.topMenu__contacts__phone__img
+	position: relative 
+	display: none
+	width: 24px
+	height: 24px
 .topMenu__contacts
 	position: relative
 	width: 100%
@@ -108,7 +123,7 @@
 			transform-origin: 3px 11px
 			transition: all .5s
 			position: absolute
-			left: 100px
+			right: 15px
 			top: -2px	
 			content: url(#{$assetImages}/topMenuItem__before.svg)
 	&:hover
@@ -158,6 +173,7 @@
 	top: 0
 	left: 0
 	width: auto
+	z-index: 10
 	background: #fff
 	display: none
 	justify-content: flex-start
@@ -422,6 +438,8 @@
 .section__header
 	padding-top: 0
 //section__newOffer
+.newOffer__sliderMob
+	display: none
 .newOffer
 	position: relative
 	width: 100%
@@ -464,6 +482,25 @@
 	&:hover
 		text-decoration: underline
 		trarsition: all .5s
+
+.newOffer__item__desc__button
+	position: relative
+	width: 100%
+	font-style: normal
+	font-weight: 400
+	font-size: 11px
+	line-height: 150%
+	text-align: right
+	color: #0071E3
+	trarsition: all .5s
+	display: flex
+	align-self: flex-start
+	margin-left: 10px
+	margin-top: 24px
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/newOffer__item__desc__button.svg)
 .newOffer__lists
 	position: relative
 	display: flex
@@ -678,7 +715,13 @@
 	line-height: 160%
 	letter-spacing: 0.03em
 	text-transform: uppercase
-	color: #1D1D1F		
+	color: #1D1D1F	
+.services__accordion__content__img
+	position: relative
+	width: 393px
+	height: 246px
+	object-fit: cover
+	object-position: 50% 50%	
 .accordion__content
 	position: relative
 	width: 100%

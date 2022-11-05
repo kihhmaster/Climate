@@ -1,44 +1,21 @@
 <!--#set var="title" value="OptimizedHTML 5" -->
 <!--#include virtual="/parts/header.html" -->
-
-<div class="section section__header">
-	<div class="container">
-		<div class="section__topMenu">
-			<a class="topMenu__logo" href="index.html">
-				<img src="images/dist/logo.svg" alt="logo" class="topMenu__logo__img">
-			</a>
-			<nav class="topMenu__nav">
-				<ul class="topMenu">
-					<li class="topMenuItem topMenuItem__accordion">
-						<a class="topMenuItem__link" href="#">каталог</a>
-						<ul class="internalList">
-							<li class="internalList__item"><a href="#" class="internalList__link">пункт__1</a></li>
-							<li class="internalList__item"><a href="#" class="internalList__link">пункт__1</a></li>
-							<li class="internalList__item"><a href="#" class="internalList__link">пункт__1</a></li>
-							<li class="internalList__item"><a href="#" class="internalList__link">пункт__1</a></li>
-						</ul>
-					</li>
-					<li class="topMenuItem"><a class="topMenuItem__link" href="#">услуги</a></li>
-					<li class="topMenuItem"><a class="topMenuItem__link" href="#">блог</a></li>
-					<li class="topMenuItem"><a class="topMenuItem__link" href="#">о компании</a></li>
-					<li class="topMenuItem"><a class="topMenuItem__link" href="#">проекты</a></li>
-					<li class="topMenuItem"><a class="topMenuItem__link" href="#">контакты</a></li>
-				</ul>
-			</nav>
-
-
-			<div class="topMenu__contacts">
-				<a class="topMenu__contacts__phone" href="tel:88001226539">8 800 122 65 39</a>
-				<div class="topMenu__contacts__search">
-					<img src="images/dist/search.svg" alt="search" class="search">
-				</div>
-			</div>
-		</div>
-		<div class="header__content">
-			<h1 class="heading__h1 header__content__title">Системы<br>кондиционирования</h1>
-			<h2 class="heading__h2 header__content__desc">Комфорт <br>– это<br> легко</h2>
-		</div>
-	</div>
+<div class="section__topMenu">
+	<a class="topMenu__logo" href="index.html">
+		<img src="images/dist/logo.svg" alt="logo" class="topMenu__logo__img">
+	</a>
+	<nav class="topMenu__nav">
+		<ul class="topMenu">
+			<li class="topMenuItem topMenuItem__accordion">
+				<a class="topMenuItem__link" href="#">каталог</a>
+			</li>
+			<li class="topMenuItem"><a class="topMenuItem__link" href="#">услуги</a></li>
+			<li class="topMenuItem"><a class="topMenuItem__link " href="#">блог</a></li>
+			<li class="topMenuItem"><a class="topMenuItem__link" href="#">о компании</a></li>
+			<li class="topMenuItem"><a class="topMenuItem__link" href="#">проекты</a></li>
+			<li class="topMenuItem"><a class="topMenuItem__link" href="#">контакты</a></li>
+		</ul>
+	</nav>
 	<nav class="topMenu__overlay animate__animated">
 		<div class="overlay__header">
 			<div class="overlay__header__logo">
@@ -56,7 +33,7 @@
 			<ul class="overlay__list">
 				<li class="overlay__item overlay__accordion">
 					Кондиционеры
-					<ul class="overlay__internalList animate__animated animate__fadeOutLeft">
+					<ul class="overlay__internalList animate__animated animate__fadeOut">
 						<li class="overlay_internalList__item">
 							<a class="overlay_internalList__item__link" href="#">Кассетные</a>
 						</li>
@@ -76,7 +53,7 @@
 				</li>
 				<li class="overlay__item overlay__accordion">
 					Чиллеры
-					<ul class="overlay__internalList animate__animated animate__fadeOutLeft">
+					<ul class="overlay__internalList animate__animated animate__fadeOut">
 						<li class="overlay_internalList__item">
 							<a class="overlay_internalList__item__link" href="#">Кассетные</a>
 						</li>
@@ -105,7 +82,28 @@
 				</li>
 			</ul>
 		</div>
+
 	</nav>
+
+	<div class="topMenu__contacts">
+		<a class="topMenu__contacts__phone" href="tel:88001226539">
+			<p>8 800 122 65 39</p> <img src="images/dist/topMenu__contacts__phone__img.svg" alt="icon"
+				class="topMenu__contacts__phone__img">
+		</a>
+		<div class="topMenu__contacts__search menu">
+			<img src="images/dist/search.svg" alt="search" class="search">
+			<img src="images/dist/humburger.svg" alt="search" class="humburger">
+		</div>
+	</div>
+</div>
+<div class="section section__header">
+	<div class="container">
+		<div class="header__content">
+			<h1 class="heading__h1 header__content__title">Системы<br>кондиционирования</h1>
+			<h2 class="heading__h2 header__content__desc">Комфорт <br>– это<br> легко</h2>
+		</div>
+	</div>
+
 
 </div>
 <div class="section section__categories">
@@ -118,7 +116,8 @@
 					<div class="categories__item__models">76 модели</div>
 				</div>
 
-				<div class="categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="categories__item">
 				<div class="categories__item__img">
@@ -128,7 +127,8 @@
 					<div class="categories__item__title">VRF системы</div>
 					<div class="categories__item__models">29 модели</div>
 				</div>
-				<div class="categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="categories__item">
 				<div class="categories__item__img"><img src="images/dist/categories__item__img__3.svg" alt="categories"></div>
@@ -136,7 +136,8 @@
 					<div class="categories__item__title">Чиллеры</div>
 					<div class="categories__item__models">29 модели</div>
 				</div>
-				<div class="categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="categories__item">
 				<div class="categories__item__img"><img src="images/dist/categories__item__img__4.svg" alt="categories"></div>
@@ -145,7 +146,8 @@
 					<div class="categories__item__models">18 модели</div>
 				</div>
 
-				<div class="categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="categories__item">
 				<div class="categories__item__img"><img src="images/dist/categories__item__img__5.svg" alt="categories"></div>
@@ -154,7 +156,8 @@
 					<div class="categories__item__models">76 модели</div>
 				</div>
 
-				<div class="categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="categories__item">
 				<div class="categories__item__img"><img src="images/dist/categories__item__img__6.svg" alt="categories"></div>
@@ -163,7 +166,8 @@
 					<div class="categories__item__models">243 позиции</div>
 				</div>
 
-				<div class="categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 		</div>
 	</div>
@@ -173,6 +177,270 @@
 		<div class="newOffer">
 			<div class="newOffer__top">
 				<h2 class="section__title newOffer__title">новые предложения</h2>
+				<div class="swiper-container newOffer__sliderMob">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel">бесплатный монтаж</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__1.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability inStock">в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+							</a>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel newOffer__item__lebel__red">хит сезона</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__2.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability inStock">в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+							</a>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel newOffer__item__lebel__blue">хит сезона</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__3.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+
+							</a>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel">бесплатный монтаж</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__4.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability inStock">в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+							</a>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel newOffer__item__lebel__red">хит сезона</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__5.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability inStock">в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+
+							</a>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel newOffer__item__lebel__blue">хит сезона</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__6.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel">бесплатный монтаж</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__7.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability inStock">в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+
+							</a>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel newOffer__item__lebel__red">хит сезона</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__8.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability inStock">в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="newOffer__item">
+								<div class="newOffer__item__lebel newOffer__item__lebel__blue">хит сезона</div>
+								<div class="newOffer__item__img"><img src="images/dist/newOffer__item__img__9.svg" alt="newOffer"></div>
+								<div class="newOffer__item__line">
+									<div class="newOffer__item__line__left"></div>
+									<div class="newOffer__item__line__dote">
+										<div class="dote__wrapp">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="newOffer__item__line__right"></div>
+								</div>
+								<div class="newOffer__item__desc">
+									<div class="newOffer__item__desc__left">
+										<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+										<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+									</div>
+									<div class="newOffer__item__desc__right">
+										<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
+										<div class="newOffer__item__desc__price">36 900 ₽</div>
+									</div>
+								</div>
+								<div class="newOffer__item__desc__button">Подробнее</div>
+
+							</a>
+						</div>
+					</div>
+				</div>
 				<a href="#" class="newOffer__button">Посмотреть все</a>
 			</div>
 			<div class="newOffer__lists">
@@ -191,14 +459,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability inStock">в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability inStock">в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -216,14 +484,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability inStock">в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability inStock">в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -241,14 +509,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -266,14 +534,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability inStock">в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability inStock">в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -291,14 +559,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability inStock">в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability inStock">в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -316,14 +584,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -341,14 +609,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability inStock">в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability inStock">в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -366,14 +634,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability inStock">в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability inStock">в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 				<a href="#" class="newOffer__item">
@@ -391,14 +659,14 @@
 						<div class="newOffer__item__line__right"></div>
 					</div>
 					<div class="newOffer__item__desc">
-							<div class="newOffer__item__desc__left">
-								<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
-								<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
-							</div>
-							<div class="newOffer__item__desc__right">
-								<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
-								<div class="newOffer__item__desc__price">36 900 ₽</div>
-							</div>
+						<div class="newOffer__item__desc__left">
+							<div class="newOffer__item__desc__title__1"><span>HAIER</span> HSU-12HPL103/R3(IN) / </div>
+							<div class="newOffer__item__desc__title__2">HSU-12HPL03/R3(OUT)</div>
+						</div>
+						<div class="newOffer__item__desc__right">
+							<div class="newOffer__item__desc__availability outOfStock">нет в наличии</div>
+							<div class="newOffer__item__desc__price">36 900 ₽</div>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -410,42 +678,54 @@
 		<h2 class="section__title services__title">наши услуги</h2>
 		<div class="accordion">
 			<div class="accordion__intro">
-				<h4 ><span>01</span>Проектирование</h4>
-				<div class="accordion__intro__button">Подробнее</div>
+				<h4 class="accordion__intro__title"><span>01</span>Проектирование</h4>
+				<div class="accordion__intro__button"><p>Подробнее</p></div>
 			</div>
 			<div class="accordion__content">
-				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
-				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg" alt="services">
+				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non
+					dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam
+					scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
+				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg"
+					alt="services">
 			</div>
 		</div>
 		<div class="accordion">
 			<div class="accordion__intro">
-				<h4 ><span>02</span>Монтаж оборудования</h4>
-				<div class="accordion__intro__button">Подробнее</div>
+				<h4 class="accordion__intro__title"><span>02</span>Монтаж оборудования</h4>
+				<div class="accordion__intro__button"><p>Подробнее</p></div>
 			</div>
 			<div class="accordion__content">
-				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
-				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg" alt="services">
+				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non
+					dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam
+					scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
+				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg"
+					alt="services">
 			</div>
 		</div>
 		<div class="accordion">
 			<div class="accordion__intro">
-				<h4 ><span>03</span>Обслуживание</h4>
-				<div class="accordion__intro__button">Подробнее</div>
+				<h4 class="accordion__intro__title"><span>03</span>Обслуживание</h4>
+				<div class="accordion__intro__button"><p>Подробнее</p></div>
 			</div>
 			<div class="accordion__content">
-				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
-				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg" alt="services">
+				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non
+					dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam
+					scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
+				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg"
+					alt="services">
 			</div>
 		</div>
 		<div class="accordion">
 			<div class="accordion__intro">
-				<h4 ><span>04</span>Помощь в подборе</h4>
-				<div class="accordion__intro__button">Подробнее</div>
+				<h4 class="accordion__intro__title"><span>04</span>Помощь в подборе</h4>
+				<div class="accordion__intro__button"><p>Подробнее</p></div>
 			</div>
 			<div class="accordion__content">
-				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
-				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg" alt="services">
+				<p class="services__accordion__content">Vestibulum tincidunt eros posuere quam molestie faucibus. Integer non
+					dui commodo, accumsan mauris vitae, pulvinar nisl. Pellentesque rutrum tortor in placerat tempus. Nullam
+					scelerisque erat nec ornare tincidunt. Vestibulum quis ante egestas, mattis leo commodo, tincidunt quam.</p>
+				<img class="services__accordion__content__img" src="images/dist/services__accordion__content__img.svg"
+					alt="services">
 			</div>
 		</div>
 	</div>
@@ -458,31 +738,39 @@
 				<a href="#" class="advantages__header__item">
 					<div class="advantages__header__item__title">100% оригинальное оборудование с гарантией</div>
 					<div class="advantages__header__item__button button__blue">Подробнее</div>
-					<img src="images/dist/advantages__header__item__bg--1.svg" alt="advantages" class="advantages__header__item__img">
+					<img src="images/dist/advantages__header__item__bg--1.svg" alt="advantages"
+						class="advantages__header__item__img">
 				</a>
 				<a href="#" class="advantages__header__item">
 					<div class="advantages__header__item__title">100% оригинальное оборудование с гарантией</div>
 					<div class="advantages__header__item__button button__blue">Выбрать</div>
-					<img src="images/dist/advantages__header__item__bg--2.svg" alt="advantages" class="advantages__header__item__img">
+					<img src="images/dist/advantages__header__item__bg--2.svg" alt="advantages"
+						class="advantages__header__item__img">
 				</a>
 			</div>
 			<div class="advantages__content">
 				<a href="#" class="advantages__content__item">
-					<div class="advantages__content__icon"><img src="images/dist/advantages__content__icon__1.svg" alt="icon"></div>
+					<div class="advantages__content__icon"><img src="images/dist/advantages__content__icon__1.svg" alt="icon">
+					</div>
 					<div class="advantages__content__title">Бесплатная доставка</div>
-					<div class="advantages__content__desc">Fusce ut consequat risus, quis convallis diam. Etiam quis tempor lectus.</div>
+					<div class="advantages__content__desc">Fusce ut consequat risus, quis convallis diam. Etiam quis tempor
+						lectus.</div>
 					<div class="advantages__content__button button__blue">Подробнее</div>
 				</a>
 				<a href="#" class="advantages__content__item">
-					<div class="advantages__content__icon"><img src="images/dist/advantages__content__icon__2.svg" alt="icon"></div>
+					<div class="advantages__content__icon"><img src="images/dist/advantages__content__icon__2.svg" alt="icon">
+					</div>
 					<div class="advantages__content__title">Программа лояльности</div>
-					<div class="advantages__content__desc">Fusce ut consequat risus, quis convallis diam. Etiam quis tempor lectus.</div>
+					<div class="advantages__content__desc">Fusce ut consequat risus, quis convallis diam. Etiam quis tempor
+						lectus.</div>
 					<div class="advantages__content__button button__blue">Подробнее</div>
 				</a>
 				<a href="#" class="advantages__content__item">
-					<div class="advantages__content__icon"><img src="images/dist/advantages__content__icon__3.svg" alt="icon"></div>
+					<div class="advantages__content__icon"><img src="images/dist/advantages__content__icon__3.svg" alt="icon">
+					</div>
 					<div class="advantages__content__title">Обмен и возврат</div>
-					<div class="advantages__content__desc">Fusce ut consequat risus, quis convallis diam. Etiam quis tempor lectus.</div>
+					<div class="advantages__content__desc">Fusce ut consequat risus, quis convallis diam. Etiam quis tempor
+						lectus.</div>
 					<div class="advantages__content__button button__blue">Подробнее</div>
 				</a>
 			</div>
@@ -493,48 +781,116 @@
 	<div class="container">
 		<div class="publications__top">
 			<h2 class="section__title publications__title">публикации</h2>
+			<div class="swiper-container publications__sliderMob">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<a href="#" class="publication__item">
+							<div class="publication__item__img"><img src="images/dist/publication__item__img__1.svg" alt="publication">
+							</div>
+							<div class="publication__item__date">5 августа 2022</div>
+							<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
+							<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+									src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="publication__item">
+							<div class="publication__item__img"><img src="images/dist/publication__item__img__2.svg" alt="publication">
+							</div>
+							<div class="publication__item__date">5 августа 2022</div>
+							<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
+							<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+									src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="publication__item">
+							<div class="publication__item__img"><img src="images/dist/publication__item__img__3.svg" alt="publication">
+							</div>
+							<div class="publication__item__date">5 августа 2022</div>
+							<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
+							<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+									src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="publication__item">
+							<div class="publication__item__img"><img src="images/dist/publication__item__img__4.svg" alt="publication">
+							</div>
+							<div class="publication__item__date">5 августа 2022</div>
+							<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
+							<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+									src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+						</a>
+					</div>
+				</div>
+			</div>
 			<a href="#" class="publications__button button__blue">Смотреть все</a>
 		</div>
 		<div class="publication">
 			<a href="#" class="publication__item">
-				<div class="publication__item__img"><img src="images/dist/publication__item__img__1.svg" alt="publication"></div>
+				<div class="publication__item__img"><img src="images/dist/publication__item__img__1.svg" alt="publication">
+				</div>
 				<div class="publication__item__date">5 августа 2022</div>
 				<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
-				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="publication__item">
-				<div class="publication__item__img"><img src="images/dist/publication__item__img__2.svg" alt="publication"></div>
+				<div class="publication__item__img"><img src="images/dist/publication__item__img__2.svg" alt="publication">
+				</div>
 				<div class="publication__item__date">5 августа 2022</div>
 				<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
-				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="publication__item">
-				<div class="publication__item__img"><img src="images/dist/publication__item__img__3.svg" alt="publication"></div>
+				<div class="publication__item__img"><img src="images/dist/publication__item__img__3.svg" alt="publication">
+				</div>
 				<div class="publication__item__date">5 августа 2022</div>
 				<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
-				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 			<a href="#" class="publication__item">
-				<div class="publication__item__img"><img src="images/dist/publication__item__img__4.svg" alt="publication"></div>
+				<div class="publication__item__img"><img src="images/dist/publication__item__img__4.svg" alt="publication">
+				</div>
 				<div class="publication__item__date">5 августа 2022</div>
 				<div class="publication__item__desc">Sed porttitor ipsum justo, in hendrerit augue tristique vulputate</div>
-				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img" src="images/dist/categories__item__button__img.svg" alt="icon"></div>
+				<div class="publication__item__button categories__item__button"><img class="categories__item__button__img"
+						src="images/dist/categories__item__button__img.svg" alt="icon"></div>
 			</a>
 		</div>
 		<div class="publiction__expanded">
 			<div class="publiction__expanded__item">
 				<div class="publiction__expanded__item__desc">
 					<div class="publiction__expanded__item__desc__title">Etiam dui libero, posuere</div>
-					<div class="publiction__expanded__item__desc__text">Etiam ullamcorper iaculis leo sit amet tempus. Nunc arcu quam, tempor id nibh non, venenatis dictum massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras blandit eleifend pulvinar. Donec interdum, ipsum ut lacinia ultricies, enim enim convallis mi, tempor dapibus nisi nisl et risus. Nunc est nisi, congue sed vestibulum at, ornare quis felis. Sed facilisis libero id lacus consequat ultrices. Nam turpis ante, ultricies et egestas ac, consequat sed nunc. Quisque non quam nec dolor euismod maximus. Nam sem erat, scelerisque eget odio eget, molestie dapibus magna.</div>
+					<div class="publiction__expanded__item__desc__text">Etiam ullamcorper iaculis leo sit amet tempus. Nunc arcu
+						quam, tempor id nibh non, venenatis dictum massa. Class aptent taciti sociosqu ad litora torquent per
+						conubia nostra, per inceptos himenaeos. Cras blandit eleifend pulvinar. Donec interdum, ipsum ut lacinia
+						ultricies, enim enim convallis mi, tempor dapibus nisi nisl et risus. Nunc est nisi, congue sed vestibulum
+						at, ornare quis felis. Sed facilisis libero id lacus consequat ultrices. Nam turpis ante, ultricies et
+						egestas ac, consequat sed nunc. Quisque non quam nec dolor euismod maximus. Nam sem erat, scelerisque eget
+						odio eget, molestie dapibus magna.</div>
 				</div>
-				<img src="images/dist/publiction__expanded__item__img__2.svg" alt="publiction" class="publiction__expanded__item__img">
+				<img src="images/dist/publiction__expanded__item__img__2.svg" alt="publiction"
+					class="publiction__expanded__item__img">
 			</div>
 			<div class="publiction__expanded__item publiction__expanded__item__reverse">
 				<div class="publiction__expanded__item__desc">
 					<div class="publiction__expanded__item__desc__title">Etiam dui libero, posuere</div>
-					<div class="publiction__expanded__item__desc__text">Etiam ullamcorper iaculis leo sit amet tempus. Nunc arcu quam, tempor id nibh non, venenatis dictum massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras blandit eleifend pulvinar. Donec interdum, ipsum ut lacinia ultricies, enim enim convallis mi, tempor dapibus nisi nisl et risus. Nunc est nisi, congue sed vestibulum at, ornare quis felis. Sed facilisis libero id lacus consequat ultrices. Nam turpis ante, ultricies et egestas ac, consequat sed nunc. Quisque non quam nec dolor euismod maximus. Nam sem erat, scelerisque eget odio eget, molestie dapibus magna.</div>
+					<div class="publiction__expanded__item__desc__text">Etiam ullamcorper iaculis leo sit amet tempus. Nunc arcu
+						quam, tempor id nibh non, venenatis dictum massa. Class aptent taciti sociosqu ad litora torquent per
+						conubia nostra, per inceptos himenaeos. Cras blandit eleifend pulvinar. Donec interdum, ipsum ut lacinia
+						ultricies, enim enim convallis mi, tempor dapibus nisi nisl et risus. Nunc est nisi, congue sed vestibulum
+						at, ornare quis felis. Sed facilisis libero id lacus consequat ultrices. Nam turpis ante, ultricies et
+						egestas ac, consequat sed nunc. Quisque non quam nec dolor euismod maximus. Nam sem erat, scelerisque eget
+						odio eget, molestie dapibus magna.</div>
 				</div>
-				<img src="images/dist/publiction__expanded__item__img__1.svg" alt="publiction" class="publiction__expanded__item__img">
+				<img src="images/dist/publiction__expanded__item__img__1.svg" alt="publiction"
+					class="publiction__expanded__item__img">
 			</div>
 		</div>
 	</div>
