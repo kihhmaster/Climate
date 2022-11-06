@@ -2,9 +2,36 @@
 <!--#include virtual="/parts/header.html" -->
 <!--#include virtual="/parts/topmenu.html" -->
 <!--#include virtual="/parts/breadCrumbs.html" -->
-<div class="section section__catalogue">
+<div class="section section__filterTop">
 	<div class="container">
 		<div class="catalogue__title section__title">Фанкойлы<span class="catalogue__title__quantity" >72 товара</span></div>
+		<div class="filter__top">
+			<div class="tilter__top__type">
+				<a href="#" class="tilter__top__type__item">Канальные</a>
+				<a href="#" class="tilter__top__type__item">Кассетные</a>
+				<a href="#" class="tilter__top__type__item">Напольно-потолочные</a>
+				<a href="#" class="tilter__top__type__item">Настенные</a>
+			</div>
+			<div class="filter__top__cost">
+				<div class="filter__top__button">
+					 <div class="filter__top__button__title">Фильтр</div>
+					 <div class="filter__top__button__value">1</div>
+				</div>
+				<div class="filter__top__cost__select">
+					<label for="topСostSelect"></label>
+					<select name="cost" id="topСostSelect">
+							<option value="">По цене</option>
+							<option value="cheaper">Дешевле</option>
+							<option value="dearly">Дороже</option>
+							<option value="date">По дате</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section section__catalogue">
+	<div class="container">
 		<div class="catalogue__main">
 			<div class="catalogue__filer__wrap">
 				<div class="catalogue__filer__parameters">
@@ -15,59 +42,97 @@
 					<div class="catalogue__filer__title catalogue__filer__fabricator__title">Производитель</div>
 					<form class="catalogue__filer__lists catalogue__filer__fabricator__lists">
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
-							<label for="Haier">Haier</label>
-      				<input type="checkbox" name="Haier" id="Haier" checked>
+      				<input type="checkbox" class="checkboxCastom"  name="Haier" id="Haier" checked>
+							<label class="labelCastom" for="Haier">Haier</label>
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+      				<input type="checkbox" class="checkboxCastom"   name="Tika" id="Tika">
 							<label for="Tika">Tika</label>
-      				<input type="checkbox" name="Tika" id="Tika">
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+      				<input type="checkbox" class="checkboxCastom"  name="Daikin" id="Daikin">
 							<label for="Daikin">Daikin</label>
-      				<input type="checkbox" name="Daikin" id="Daikin">
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+      				<input type="checkbox" class="checkboxCastom"  name="MitsubishiElectric" id="MitsubishiElectric">
 							<label for="MitsubishiElectric">Mitsubishi Electric</label>
-      				<input type="checkbox" name="MitsubishiElectric" id="MitsubishiElectric">
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+      				<input type="checkbox" class="checkboxCastom"  name="MitsubishiHeavyIndustries" id="MitsubishiHeavyIndustries">
 							<label for="MitsubishiHeavyIndustries">Mitsubishi Heavy Industries</label>
-      				<input type="checkbox" name="MitsubishiHeavyIndustries" id="MitsubishiHeavyIndustries">
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+      				<input type="checkbox" class="checkboxCastom"  name="LG" id="LG">
 							<label for="LG">LG</label>
-      				<input type="checkbox" name="LG" id="LG">
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+      				<input type="checkbox" class="checkboxCastom"  name="Hisense" id="Hisense">
 							<label for="Hisense">Hisense</label>
-      				<input type="checkbox" name="Hisense" id="Hisense">
+
 						</div>
 					</form>
+					<a href="#" class="catalogue__filer__parameters__button">Показать все</a>
 				</div>
 				<div class="catalogue__filer catalogue__filer__CompressorType">
 					<div class="catalogue__filer__title catalogue__filer__CompressorType__title">Тип компрессора</div>
 					<form class="catalogue__filer__lists scatalogue__filer__CompressorType__lists">
 						<div class="catalogue__filer__item catalogue__filer__CompressorType__item">
+      				<input type="checkbox" class="checkboxCastom"  name="Inverter" id="Inverter" checked>
 							<label for="Inverter">Инверторный</label>
-      				<input type="checkbox" name="Inverter" id="Inverter" checked>
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__CompressorType__item">
+      				<input type="checkbox" class="checkboxCastom"  name="NonInverted" id="NonInverted">
 							<label for="NonInverted">Неинверторный</label>
-      				<input type="checkbox" name="NonInverted" id="NonInverted">
+
 						</div>
 
 
 					</form>
 				</div>
+				<div class="catalogue__filer catalogue__filer__heatingPower">
+					<div class="catalogue__filer__title catalogue__filer__heatingPower__title">Мощность охлаждения, Вт</div>
+					<form class="catalogue__filer__lists scatalogue__filer__heatingPower__lists">
+						<input type="number" class="scatalogue__filer__heatingPower__item" id="CoolingPowerFrom" name="CoolingPowerFrom" placeholder="от 2000">
+						<input type="number" class="scatalogue__filer__heatingPower__item" id="CoolingPowerUpTo" name="CoolingPowerUpTo" placeholder="до 4000">
+					</form>
+					
+
+				</div>
+				<div class="catalogue__filer catalogue__filer__heatingPower">
+					<div class="catalogue__filer__title catalogue__filer__heatingPower__title">Мощность нагрева, Вт</div>
+					<form class="catalogue__filer__lists scatalogue__filer__heatingPower__lists">
+						<input type="number" class="scatalogue__filer__heatingPower__item" id="heatingPowerFrom" name="heatingPowerFrom" placeholder="от 2000">
+						<input type="number" class="scatalogue__filer__heatingPower__item" id="heatingPowerUpTo" name="heatingPowerUpTo" placeholder="до 4000">
+					</form>
+					
+
+				</div>
 				<div class="catalogue__filer catalogue__filer__color">
 					<div class="catalogue__filer__title catalogue__filer__color__title">Цвет</div>
 					<form class="catalogue__filer__lists scatalogue__filer__color__lists">
 						<div class="catalogue__filer__item catalogue__filer__color__item">
-							<input type="radio" id="white" name="head">
-							<input type="radio" id="gray" name="head">
-							<input type="radio" id="black" name="head">
-							<input type="radio" id="beige" name="head">
-							<input type="color" id="allColor" name="head" value="#F1E0C7">
+							<input type="radio" class="radioCastom"  id="white" name="head">
+							<label for="white"></label>
+						</div>
+						<div class="catalogue__filer__item catalogue__filer__color__item">
+							<input type="radio" class="radioCastom"  id="gray" name="head">
+							<label for="gray"></label>
+						</div>
+						<div class="catalogue__filer__item catalogue__filer__color__item">
+							<input type="radio" class="radioCastom"  id="black" name="head">
+							<label for="black"></label>
+						</div>
+						<div class="catalogue__filer__item catalogue__filer__color__item">
+							<input type="radio" class="radioCastom"  id="beige" name="head">
+							<label for="beige"></label>
+						</div>
+						<div class="catalogue__filer__item catalogue__filer__color__item">
+							<input type="color" class="castomColor" id="allColor" name="head" value="#F1E0C7">
+							<label for="allColor"></label>
 						</div>
 					</form>
 				</div>
@@ -75,31 +140,35 @@
 					<div class="catalogue__filer__title catalogue__filer__OtherOptions__title">Другие опции</div>
 					<form class="catalogue__filer__lists scatalogue__filer__OtherOptions__lists">
 						<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+      				<input type="checkbox" class="checkboxCastom"  name="WiFi" id="WiFi" checked>
 							<label for="WiFi">Wi-Fi</label>
-      				<input type="checkbox" name="WiFi" id="WiFi" checked>
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+      				<input type="checkbox" class="checkboxCastom"  name="SelfClean" id="SelfClean" checked>
 							<label for="SelfClean">Self Clean</label>
-      				<input type="checkbox" name="SelfClean" id="SelfClean" checked>
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+      				<input type="checkbox" class="checkboxCastom"  name="EcoSensor" id="EcoSensor" >
 							<label for="EcoSensor">Экодатчик</label>
-      				<input type="checkbox" name="EcoSensor" id="EcoSensor" >
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+      				<input type="checkbox" class="checkboxCastom"  name="SilentMode" id="SilentMode" >
 							<label for="SilentMode">Беcшумный режим</label>
-      				<input type="checkbox" name="SilentMode" id="SilentMode" >
+
 						</div>
 						<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+      				<input type="checkbox" class="checkboxCastom"  name="Fresh " id="Fresh " >
 							<label for="Fresh ">Приток свежего воздуха</label>
-      				<input type="checkbox" name="Fresh " id="Fresh " >
+
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="catalogue__cards">
-				<div class="section section__publications">
-					<div class="container">
+				<div class="section__publications">
 						<div class="publiction__expanded">
 							<div class="publiction__expanded__item">
 								<div class="publiction__expanded__item__desc">
@@ -112,11 +181,354 @@
 										egestas ac, consequat sed nunc. Quisque non quam nec dolor euismod maximus. Nam sem erat, scelerisque eget
 										odio eget, molestie dapibus magna.</div>
 								</div>
-								<img src="images/dist/publiction__expanded__item__img__2.svg" alt="publiction"
+								<img src="images/dist/publiction__expanded__item__img__cards.svg" alt="publiction"
 									class="publiction__expanded__item__img">
 							</div>
 						</div>
-					</div>
+				</div>
+				<div class="cards">
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__1.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability outOfStock">нет в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__2.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability inStock">в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__3.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability outOfStock">нет в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__4.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability inStock">в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__5.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability inStock">в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__6.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability inStock">в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__7.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability outOfStock">нет в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__8.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability inStock">в наличии</div>
+						</div>
+					</a>
+					<a href="#" class="card">
+						<div class="card__img"><img src="images/dist/newOffer__item__img__9.svg" alt="newOffer"></div>
+						<div class="newOffer__item__line">
+							<div class="newOffer__item__line__left"></div>
+							<div class="newOffer__item__line__dote">
+								<div class="dote__wrapp">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="newOffer__item__line__right"></div>
+						</div>
+						<div class="card__desc">
+							<div class="card__desc__title"><span>HAIER </span> AS35S2SJ1FA-G / 1U35MECFRA</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Компресор</div>
+								<div class="card__desc__param__right">Неинверторный </div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Охлаждение, ВТ</div>
+								<div class="card__desc__param__right">2200~8500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Нагрев, ВТ</div>
+								<div class="card__desc__param__right">2400~9500</div>
+							</div>
+							<div class="card__desc__param">
+								<div class="card__desc__param__left">Энергоэффект</div>
+								<div class="card__desc__param__right">А+</div>
+							</div>
+							
+						</div>
+						<div class="card__cost">
+							<div class="card__cost__price">36 900 ₽</div>
+							<div class="card__cost__availability inStock">в наличии</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>

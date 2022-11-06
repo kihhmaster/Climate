@@ -1,0 +1,256 @@
+.checkboxCastom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkboxCastom+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.catalogue__filer__item .checkboxCastom+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.checkboxCastom+label::after {
+  content: '';
+  display: inline-block;
+	position: absolute;
+	right: 0;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.checkboxCastom:checked+label::after {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+/* стили при наведении курсора на checkbox */
+.checkboxCastom:not(:disabled):not(:checked)+label:hover::after {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.checkboxCastom:not(:disabled):active+label::after {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.checkboxCastom:focus+label::after {
+  box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.checkboxCastom:focus:not(:checked)+label::after {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.checkboxCastom:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+
+
+/* для элемента input c type="radio" */
+.radioCastom {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+/* для элемента label связанного с .radioCastom */
+.radioCastom+label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.radioCastom+label::before {
+	content: '';
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.radioCastom#white+label::before {
+	content: '';
+	background-image: url(#{$assetImages}/radioCastom__1.svg);
+
+}
+.radioCastom#gray+label::before {
+	content: '';
+	background-image: url(#{$assetImages}/radioCastom__2.svg);
+
+}
+.radioCastom#black+label::before {
+	content: '';
+	background-image: url(#{$assetImages}/radioCastom__3.svg);
+
+}
+.radioCastom#beige+label::before {
+	content: '';
+	background-image: url(#{$assetImages}/radioCastom__4.svg);
+
+}
+/* стили при наведении курсора на радио */
+.radioCastom:not(:disabled):not(:checked)+label:hover::before {
+	border-color: #b3d7ff;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.radioCastom:not(:disabled):active+label::before {
+	background-color: #b3d7ff;
+	border-color: #b3d7ff;
+}
+/* стили для радиокнопки, находящейся в фокусе */
+.radioCastom:focus+label::before {
+	box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.radioCastom:focus:not(:checked)+label::before {
+	border-color: #80bdff;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.radioCastom:checked+label::before {
+	border: 2px solid #141414;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.radioCastom:disabled+label::before {
+	background-color: #e9ecef;
+}
+
+
+
+.castomColor {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+/* для элемента label связанного с .castomColor */
+.castomColor+label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.castomColor+label::before {
+	content: '';
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.castomColor#allColor+label::before {
+	content: '';
+	background-image: url(#{$assetImages}/radioCastom__5.svg);
+
+}
+/* стили при наведении курсора на радио */
+.castomColor:not(:disabled):not(:checked)+label:hover::before {
+	border-color: #b3d7ff;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.castomColor:not(:disabled):active+label::before {
+	background-color: #b3d7ff;
+	border-color: #b3d7ff;
+}
+/* стили для радиокнопки, находящейся в фокусе */
+.castomColor:focus+label::before {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.castomColor:focus:not(:checked)+label::before {
+	border-color: #80bdff;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.castomColor:checked+label::before {
+	border: 2px solid #141414;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.castomColor:disabled+label::before {
+	background-color: #e9ecef;
+}
+
+
+
+#topСostSelect {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  appearance: none;
+}
+
+#topСostSelect:not([multiple]) {
+  padding-right: 1.2em;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.25em) 0.55em;
+  background-size: 0.75em auto;
+  background-image: url(#{$assetImages}/topСostSelect__img.svg);
+}
+
+/* скроет иконку стрелки в IE */
+#topСostSelect::-ms-expand {
+  display: none;
+}
+
+#topСostSelect:focus {
+  outline: 1px solid #E6E6EB;
+  box-shadow: 0 0 0.2em #E6E6EB;
+}
+
+#topСostSelect[required] {
+  border-left-width: 0.3em;
+}
+#topСostSelect[aria-invalid] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 1) 0,
+    rgba(255, 0, 0, 1) 0.4em,
+    rgba(255, 255, 255, 0) 0.4em
+  );
+}
+
+#topСostSelect[aria-invalid]:not([multiple]) {
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, calc(100% - 0.25em) 0.35em;
+  background-size: 0.85em auto;
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 1) 0,
+      rgba(255, 0, 0, 1) 0.4em,
+      rgba(255, 255, 255, 0) 0.4em
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
+}
+#topСostSelect option {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	/* identical to box height, or 21px */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+
+	/* main dark */
+
+	color: #1D1D1F;
+}
