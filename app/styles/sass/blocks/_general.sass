@@ -7,6 +7,7 @@
 	padding: 0 30px
 	&.section__breadCrumbs
 		padding-bottom: 0
+		padding-top: 0
 	&.section__filterTop
 		padding-top: 64px
 		padding-bottom: 54px
@@ -32,13 +33,13 @@
 	display: none
 .section__topMenu
 	background: #1D1D1F
-	position: absolute
+	position: relative
 	z-index: 5
 	top: 0
 	left: 0
 	width: 100%
 	max-width: 1760px
-	padding: 0 30px
+	padding: 0 
 	justify-content: space-between
 	align-items: center
 	flex-flow: row nowrap
@@ -209,6 +210,15 @@
 		position: absolute
 		top: 10px
 		right: 10px
+.section__topMenu
+	align-self: center
+.section__topMenuWrapp
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	background: #1d1d1f
 .overlay__clase
 	height: 28px
 	width: 28px
@@ -265,6 +275,7 @@
 	padding: 10px 10px 12px 56px
 	width: 100%
 	&::placeholder
+		font-family: $userfont
 		font-style: normal
 		font-weight: 300
 		font-size: 20px
@@ -311,6 +322,7 @@
 	top: 0
 	left: 0
 	white-space: nowrap
+	font-family: $userfont
 	font-style: normal
 	font-weight: 300
 	font-size: 24px
@@ -377,11 +389,15 @@
 	font-size: 32px
 	line-height: 160%
 .header__content__desc
-	font-weight: 200
+	text-transform: uppercase
+	font-family: $userfont
+	font-weight: 100
 	font-size: 80px
 	line-height: 125%
 	text-align: right
-
+.section__topMenuWrapp
+	padding-left: 30px
+	padding-right: 30px
 //section__categories
 .section__categories
 	background: #fff
@@ -427,6 +443,7 @@
 	line-height: 150%
 	text-align: center
 .categories__item__models
+	font-family: $userfont
 	font-style: normal
 	font-weight: 300
 	font-size: 16px
@@ -487,6 +504,7 @@
 	position: relative
 	width: 100%
 	color: $textcolor
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 24px
@@ -496,6 +514,7 @@
 .newOffer__button,.button__blue
 	position: relative
 	width: 100%
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 20px
@@ -514,6 +533,7 @@
 .newOffer__item__desc__button
 	position: relative
 	width: 100%
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 11px
@@ -534,7 +554,7 @@
 	display: flex
 	width: 100%
 	flex-flow: row wrap
-	justify-content: center
+	justify-content: space-between
 	align-items: flex-start
 	margin-top: 40px
 .newOffer__item
@@ -558,6 +578,7 @@
 	z-index: 2
 	width: auto
 	background: #7FB33C
+	font-family: $userfont
 	font-style: normal
 	font-weight: 500
 	font-size: 11px
@@ -626,6 +647,7 @@
 	flex-flow: column nowrap
 .newOffer__item__desc__title__1,.newOffer__item__desc__title__2
 	color: $textcolor
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 14px
@@ -645,6 +667,7 @@
 	justify-content: flex-start
 	align-items: flex-end
 .newOffer__item__desc__availability
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 14px
@@ -654,6 +677,7 @@
 .outOfStock
 	color: #A2A2AD
 .newOffer__item__desc__price
+	font-family: $userfont
 	font-style: normal
 	font-weight: 600
 	font-size: 16px
@@ -698,6 +722,7 @@
 			padding: 31px 31px 31px 0
 			p
 				margin-left: 120px
+				font-family: $userfont
 				font-style: normal
 				font-weight: 400
 				font-size: 18px
@@ -714,6 +739,7 @@
 	padding-top: 32px
 	padding-bottom: 32px
 	border-bottom: 2px solid #E6E6EB
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 20px
@@ -729,6 +755,7 @@
 .accordion__intro__button
 	display: flex
 	opacity: 0.5
+	font-family: $userfont
 	font-style: normal
 	font-weight: 300
 	font-size: 16px
@@ -740,6 +767,7 @@
 		margin-left: 8px
 		content: url(#{$assetImages}/accordion__intro__button__img.svg)
 .services__title
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 24px
@@ -768,6 +796,7 @@
 	opacity: 0
 	p
 		margin-left: 120px
+		font-family: $userfont
 		font-style: normal
 		font-weight: 400
 		font-size: 18px
@@ -793,6 +822,7 @@
 		transform: rotate(0deg)
 
 .section__title
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 24px
@@ -846,6 +876,7 @@
 	&:first-child
 		margin-right: 20px
 .advantages__header__item__title
+	font-family: $userfont
 	font-style: normal
 	font-weight: 500
 	font-size: 32px
@@ -910,6 +941,7 @@
 	width: 100%
 	text-align: center
 	margin-top: 26px
+	font-family: $userfont
 	font-style: normal
 	font-weight: 500
 	font-size: 20px
@@ -921,6 +953,7 @@
 	width: 100%
 	text-align: center
 	margin-top: 14px
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 16px
@@ -987,6 +1020,7 @@
 	justify-content: flex-start
 	text-align: left
 	margin-top: 16px
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 14px
@@ -1000,6 +1034,7 @@
 	justify-content: flex-start
 	text-align: left
 	margin-top: 24px
+	font-family: $userfont
 	font-style: normal
 	font-weight: 500
 	font-size: 18px
@@ -1038,6 +1073,7 @@
 	width: 100%
 	display: flex
 	justify-content: flex-start
+	font-family: $userfont
 	font-style: normal
 	font-weight: 300
 	font-size: 32px
@@ -1048,6 +1084,7 @@
 	width: 100%
 	display: flex
 	justify-content: flex-start
+	font-family: $userfont
 	font-style: normal
 	font-weight: 400
 	font-size: 15px
