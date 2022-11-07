@@ -3,14 +3,16 @@
 	width: 100%
 	display: flex
 	justify-content: flex-start
-	flex-flow: row wrap
+	flex-flow: row nowrap
 	margin-top: 90px
+.catalogue__filer__wrap__overlay
+	display: none
 .breadCrumbs__nav
 	position: relative
 	width: 100%
 	display: flex
 	justify-content: flex-start
-	flex-flow: row wrap
+	flex-flow: row nowrap
 
 .breadCrumbs__item
 	position: relative
@@ -50,6 +52,7 @@
 	justify-content: space-between
 	align-items: flex-start
 	background: #F5F5F7
+
 .catalogue__filer
 	position: relative
 	display: flex
@@ -365,6 +368,8 @@
 	align-items: center
 	width: 100%
 	flex-flow: row nowrap
+.tilter__top__type__mob
+	display: none
 .tilter__top__type__item
 	position: relative
 	display: flex
@@ -380,6 +385,11 @@
 	letter-spacing: 0.03em
 	white-space: nowrap
 	color: #4F4F56
+.publiction__expanded__item__img
+	display: flex
+.publiction__expanded__item__img.publiction__expanded__item__img__2
+	display: none
+
 .filter__top__cost
 	position: relative
 	width: 100%
@@ -390,7 +400,7 @@
 .filter__top__button
 	position: relative
 	width: auto
-	display: flex
+	display: none
 	justify-content: space-between
 	align-items: center
 	padding: 10px 15px
@@ -451,7 +461,120 @@
 	justify-content: center
 	align-items: flex-end
 	border: none
-	padding: 4px
+	cursor: pointer
+	border: 1px solid #fff
+	padding-left: 4px
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	&:hover
+		border: 1px solid #E6E6EB
+		border-radius: 3px
+	&:focus
+		border: 1px solid #E6E6EB
+		border-radius: 3px
+.filter__top
+	margin-top: 56px
+.section.section__pagination
+	position: relative
+	width: 100%
+	align-items: center
+	justify-content: flex-start
+	padding-top: 56px
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 0
+.pagination__button__next
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: auto
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	color: #0071E3
+	margin-left: 40px
+	height: 32px
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s
+	&::after
+		display: flex
+		align-self: center
+		width: 16px
+		height: 16px
+		position: relative
+		// justify-content: center
+		// align-items: center
+		margin-left: 10px
+		content: url(#{$assetImages}/pagination__button__next__img.svg)
+
+.pagination__button__prev
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: auto
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	color: #0071E3
+	margin-right: 40px
+	height: 32px
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s
+	&::before
+		display: flex
+		align-self: center
+		width: 16px
+		height: 16px
+		position: relative
+		// justify-content: center
+		// align-items: center
+		transform: rotate(180deg)
+		margin-right: 9px
+		content: url(#{$assetImages}/pagination__button__next__img.svg)
+#pagination
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 32px
+.pagination__item
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+
+	width: 32px
+	height: 32px
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	color: #1D1D1F
+	transition: all .3s
+	&:hover
+		transition: all .3s
+		color: #0071E3	
+		background: #DEEEFF
+		border-radius: 3px
+	&.pagination__item__active
+		color: #0071E3	
+		background: #DEEEFF
+		border-radius: 3px
+
+
+		
+
+	
 		
 
 

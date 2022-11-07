@@ -205,52 +205,52 @@
   background-image: url(#{$assetImages}/topСostSelect__img.svg);
 }
 
-/* скроет иконку стрелки в IE */
-#topСostSelect::-ms-expand {
-  display: none;
-}
+// /* скроет иконку стрелки в IE */
+// #topСostSelect::-ms-expand {
+//   display: none;
+// }
 
-#topСostSelect:focus {
-  outline: 1px solid #E6E6EB;
-  box-shadow: 0 0 0.2em #E6E6EB;
-}
+// #topСostSelect:focus {
+//   outline: 1px solid #E6E6EB;
+//   box-shadow: 0 0 0.2em #E6E6EB;
+// }
 
-#topСostSelect[required] {
-  border-left-width: 0.3em;
-}
-#topСostSelect[aria-invalid] {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 0, 0, 1) 0,
-    rgba(255, 0, 0, 1) 0.4em,
-    rgba(255, 255, 255, 0) 0.4em
-  );
-}
+// #topСostSelect[required] {
+//   border-left-width: 0.3em;
+// }
+// #topСostSelect[aria-invalid] {
+//   background: linear-gradient(
+//     135deg,
+//     rgba(255, 0, 0, 1) 0,
+//     rgba(255, 0, 0, 1) 0.4em,
+//     rgba(255, 255, 255, 0) 0.4em
+//   );
+// }
 
-#topСostSelect[aria-invalid]:not([multiple]) {
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, calc(100% - 0.25em) 0.35em;
-  background-size: 0.85em auto;
-  background-image: linear-gradient(
-      135deg,
-      rgba(255, 0, 0, 1) 0,
-      rgba(255, 0, 0, 1) 0.4em,
-      rgba(255, 255, 255, 0) 0.4em
-    ),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
-}
-#topСostSelect option {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 150%;
-	/* identical to box height, or 21px */
+// #topСostSelect[aria-invalid]:not([multiple]) {
+//   background-repeat: no-repeat, no-repeat;
+//   background-position: 0 0, calc(100% - 0.25em) 0.35em;
+//   background-size: 0.85em auto;
+//   background-image: linear-gradient(
+//       135deg,
+//       rgba(255, 0, 0, 1) 0,
+//       rgba(255, 0, 0, 1) 0.4em,
+//       rgba(255, 255, 255, 0) 0.4em
+//     ),
+//     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
+// }
+// #topСostSelect option {
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-size: 14px;
+// 	line-height: 150%;
+// 	/* identical to box height, or 21px */
 
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.03em;
+// 	display: flex;
+// 	align-items: center;
+// 	letter-spacing: 0.03em;
 
-	/* main dark */
+// 	/* main dark */
 
-	color: #1D1D1F;
-}
+// 	color: #1D1D1F;
+// }

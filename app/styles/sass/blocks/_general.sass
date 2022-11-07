@@ -5,6 +5,13 @@
 	justify-content: center
 	align-items: flex-start
 	padding: 0 30px
+	&.section__breadCrumbs
+		padding-bottom: 0
+	&.section__filterTop
+		padding-top: 64px
+		padding-bottom: 54px
+.section.section__breadCrumbs
+	flex-flow: ro nowrap
 .container
 	position: relative
 	display: flex
@@ -181,6 +188,27 @@
 	flex-flow: column nowrap
 	width: 100%
 	max-width: 951px
+.catalogue__filer__wrap__overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: auto
+	z-index: 10
+	background: #fff
+	display: none
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	width: 100%
+	max-width: 951px
+	height: auto
+	padding: 32px 46px
+	padding-top: 50px
+	max-width: 422px
+	.overlay__clase
+		position: absolute
+		top: 10px
+		right: 10px
 .overlay__clase
 	height: 28px
 	width: 28px
@@ -607,6 +635,8 @@
 	white-space: nowrap
 	span
 		font-weight: 500
+.section__publications.section
+	padding-bottom: 0
 .newOffer__item__desc__right
 	position: relative
 	width: 100%
@@ -697,6 +727,7 @@
 		.accordion__intro__button
 			opacity: 1
 .accordion__intro__button
+	display: flex
 	opacity: 0.5
 	font-style: normal
 	font-weight: 300

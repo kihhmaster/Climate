@@ -11,8 +11,19 @@
 		white-space: nowrap
 //`@media (max-width:  1200px) { ...}
 @media (max-width: 1200px)
+	.breadCrumbs
+		margin-top: 80px
 	// .footer__lists__catalog,.footer__lists__services,.footer__lists__company
 	// 	padding-left: 30px
+	.catalogue__main
+		.cards
+			justify-content: center
+			.card
+				margin: 10px
+	.catalogue__cards .section__publications .publiction__expanded .publiction__expanded__item
+		height: auto
+		.publiction__expanded__item__desc
+			margin: 20px
 	.footer__lists__pollicy
 		margin-right: 30px
 	.publiction__expanded__item__reverse
@@ -55,10 +66,35 @@
 		
 //`@media (max-width: 992px) { ...}
 @media (max-width: 992px)
+	.breadCrumbs
+		margin-top: 60px
+	.catalogue__filer__wrap
+		display: none
+	.filter__top
+		flex-flow: column nowrap
+	.filter__top__cost
+		display: flex
+		position: relative
+		width: 100%
+		max-width: 100%
+		margin-top: 32px
+		justify-content: space-between
+	.filter__top__button
+		display: flex
+		width: 100%
+		max-width: 140px
+	.filter__top__cost__select
+		position: relative
+		width: 100%
 	.footer__lists__company
 		display: none
 	.publiction__expanded__item__img
 		width: 40%
+	.catalogue__main
+		.cards
+			justify-content: center
+			.card
+				max-width: 270px
 	.publiction__expanded__item__reverse
 		.publiction__expanded__item__desc
 			margin-left: 20px
@@ -125,6 +161,40 @@
 		display: none
 //`@media (max-width: 768px) { ...}
 @media (max-width: 768px)
+	.breadCrumbs
+		margin-top: 50px
+	.section.section__filterTop
+		padding-top: 32px
+		padding-bottom: 32px
+	.filter__top
+		margin-top: 32px
+	.section.section__pagination
+		justify-content: center
+	.publiction__expanded__item__desc__title
+		font-size: 18px
+	.publiction__expanded__item__desc__text
+		font-size: 12px
+	.publiction__expanded__item__img
+		display: none
+	.publiction__expanded__item__img.publiction__expanded__item__img__2
+		display: flex
+	.section__catalogue
+		.section__publications.section__publications__cards
+			display: flex
+			flex-flow: column nowrap
+			.publiction__expanded
+				display: flex
+				.publiction__expanded__item
+					flex-flow: column-reverse nowrap
+					.publiction__expanded__item__desc
+						margin: 0
+						padding: 24px
+					.publiction__expanded__item__img
+						max-width: 100%
+						height: 250px
+						object-fit: cover
+		
+
 	.footer__lists__catalog
 		display: none
 	.publiction__expanded
@@ -211,6 +281,41 @@
 		font-size: 20px
 //`@media (max-width: 576px) { ...}
 @media (max-width: 576px)
+	.catalogue__filer__wrap__overlay
+		padding: 0 
+		padding-top: 50px
+		padding-bottom: 32px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0
+
+	.section.section__filterTop
+		padding-top: 31px
+	.pagination__button__prev
+		margin-right: 5px
+	.pagination__button__next
+		margin-left: 5px
+	.catalogue__main .cards .card
+		max-width: 100%
+	.tilter__top__type__mob
+		display: flex
+		width: 100vw
+		padding-left: 35px
+	.tilter__top__type
+		display: none
+	.catalogue__title.section__title
+		text-align: left
+	.tilter__top__type__mob
+		display: flex
+		width: 100vw
+		padding-left: 0
+	.tilter__top__type__item
+		display: flex
+		align-items: stretch
+		position: relative
+		width: 200px
+		padding-right: 0
 	.section.footer
 		padding-left: 0
 		padding-right: 0

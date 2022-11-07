@@ -21,6 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: false,
 	
 	})
+	const  tilterTopTypeMob = new Swiper('.tilter__top__type__mob', {
+		slidesPerView: 1.5,
+		spaceBetween: 20,
+		loop: false,
+		pagination: false,
+		breakpoints: {
+			// when window width is >= 480px
+			440: {
+				slidesPerView: 2.2,
+				spaceBetween: 30
+			},
+		}
+	
+	})
 	//swiper-container
 
 	// Custom JS
@@ -66,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// accordions
+
 	let menu = document.querySelectorAll(".menu")
 	if(menu !== null) {
 		let overlay = document.querySelectorAll(".topMenu__overlay")
@@ -104,5 +119,44 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		})
 	}
+	let filterTopButton = document.querySelectorAll(".filter__top__button")
+	if(filterTopButton !== null) {
+		let overlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
+		let overlayClose = document.querySelectorAll(".overlay__clase")
+
+		function closeOverlay() {
+			overlay.forEach(i => {
+				i.classList.add("animate__fadeOutLeft"); 
+				i.classList.remove("animate__fadeInLeft");
+				setTimeout(()=>{
+					i.classList.remove("active");
+				}, 600)
+			});
+		}
+
+		filterTopButton.forEach(item => {
+			item.addEventListener("click", ()=>{
+				overlay.forEach(i => {
+					i.classList.add("active");
+					i.classList.remove("animate__fadeOutLeft");
+					i.classList.add("animate__fadeInLeft");
+				});
+			});
+		});
+		overlayClose.forEach(close => {
+			close.addEventListener("click", ()=>{
+				closeOverlay();
+			});
+		});
+		document.addEventListener('click', (e) => {
+			function hasAncestor(el, ancestor) {
+				return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
+			}
+			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, filterTopButton[0])) {
+				closeOverlay();
+			}
+		})
+	}
+
 
 })

@@ -2,6 +2,145 @@
 <!--#include virtual="/parts/header.html" -->
 <!--#include virtual="/parts/topmenu.html" -->
 <!--#include virtual="/parts/breadCrumbs.html" -->
+<div class="catalogue__filer__wrap__overlay animate__animated">
+	<div class="overlay__clase">
+		<img src="images/dist/catalogue__filer__wrap__overlay__close.svg" alt="icon">
+	</div>
+	<div class="catalogue__filer__wrap catalogue__filer__wrap__overlay">
+		<div class="catalogue__filer__parameters">
+			<div class="catalogue__filer__parameters__title">Параметры<br>подбора</div>
+			<div class="catalogue__filer__parameters__value">2</div>
+		</div>
+		<div class="catalogue__filer catalogue__filer__fabricator">
+			<div class="catalogue__filer__title catalogue__filer__fabricator__title">Производитель</div>
+			<form class="catalogue__filer__lists catalogue__filer__fabricator__lists">
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"  name="Haier" id="Haier" checked>
+					<label class="labelCastom" for="Haier">Haier</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"   name="Tika" id="Tika">
+					<label for="Tika">Tika</label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"  name="Daikin" id="Daikin">
+					<label for="Daikin">Daikin</label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"  name="MitsubishiElectric" id="MitsubishiElectric">
+					<label for="MitsubishiElectric">Mitsubishi Electric</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"  name="MitsubishiHeavyIndustries" id="MitsubishiHeavyIndustries">
+					<label for="MitsubishiHeavyIndustries">Mitsubishi Heavy Industries</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"  name="LG" id="LG">
+					<label for="LG">LG</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__fabricator__item">
+					<input type="checkbox" class="checkboxCastom"  name="Hisense" id="Hisense">
+					<label for="Hisense">Hisense</label>
+
+				</div>
+			</form>
+			<a href="#" class="catalogue__filer__parameters__button">Показать все</a>
+		</div>
+		<div class="catalogue__filer catalogue__filer__CompressorType">
+			<div class="catalogue__filer__title catalogue__filer__CompressorType__title">Тип компрессора</div>
+			<form class="catalogue__filer__lists scatalogue__filer__CompressorType__lists">
+				<div class="catalogue__filer__item catalogue__filer__CompressorType__item">
+					<input type="checkbox" class="checkboxCastom"  name="Inverter" id="Inverter" checked>
+					<label for="Inverter">Инверторный</label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__CompressorType__item">
+					<input type="checkbox" class="checkboxCastom"  name="NonInverted" id="NonInverted">
+					<label for="NonInverted">Неинверторный</label>
+
+				</div>
+
+
+			</form>
+		</div>
+		<div class="catalogue__filer catalogue__filer__heatingPower">
+			<div class="catalogue__filer__title catalogue__filer__heatingPower__title">Мощность охлаждения, Вт</div>
+			<form class="catalogue__filer__lists scatalogue__filer__heatingPower__lists">
+				<input type="number" class="scatalogue__filer__heatingPower__item" id="CoolingPowerFrom" name="CoolingPowerFrom" placeholder="от 2000">
+				<input type="number" class="scatalogue__filer__heatingPower__item" id="CoolingPowerUpTo" name="CoolingPowerUpTo" placeholder="до 4000">
+			</form>
+			
+
+		</div>
+		<div class="catalogue__filer catalogue__filer__heatingPower">
+			<div class="catalogue__filer__title catalogue__filer__heatingPower__title">Мощность нагрева, Вт</div>
+			<form class="catalogue__filer__lists scatalogue__filer__heatingPower__lists">
+				<input type="number" class="scatalogue__filer__heatingPower__item" id="heatingPowerFrom" name="heatingPowerFrom" placeholder="от 2000">
+				<input type="number" class="scatalogue__filer__heatingPower__item" id="heatingPowerUpTo" name="heatingPowerUpTo" placeholder="до 4000">
+			</form>
+			
+
+		</div>
+		<div class="catalogue__filer catalogue__filer__color">
+			<div class="catalogue__filer__title catalogue__filer__color__title">Цвет</div>
+			<form class="catalogue__filer__lists scatalogue__filer__color__lists">
+				<div class="catalogue__filer__item catalogue__filer__color__item">
+					<input type="radio" class="radioCastom"  id="white" name="head">
+					<label for="white"></label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__color__item">
+					<input type="radio" class="radioCastom"  id="gray" name="head">
+					<label for="gray"></label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__color__item">
+					<input type="radio" class="radioCastom"  id="black" name="head">
+					<label for="black"></label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__color__item">
+					<input type="radio" class="radioCastom"  id="beige" name="head">
+					<label for="beige"></label>
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__color__item">
+					<input type="color" class="castomColor" id="allColor" name="head" value="#F1E0C7">
+					<label for="allColor"></label>
+				</div>
+			</form>
+		</div>
+		<div class="catalogue__filer catalogue__filer__OtherOptions">
+			<div class="catalogue__filer__title catalogue__filer__OtherOptions__title">Другие опции</div>
+			<form class="catalogue__filer__lists scatalogue__filer__OtherOptions__lists">
+				<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+					<input type="checkbox" class="checkboxCastom"  name="WiFi" id="WiFi" checked>
+					<label for="WiFi">Wi-Fi</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+					<input type="checkbox" class="checkboxCastom"  name="SelfClean" id="SelfClean" checked>
+					<label for="SelfClean">Self Clean</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+					<input type="checkbox" class="checkboxCastom"  name="EcoSensor" id="EcoSensor" >
+					<label for="EcoSensor">Экодатчик</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+					<input type="checkbox" class="checkboxCastom"  name="SilentMode" id="SilentMode" >
+					<label for="SilentMode">Беcшумный режим</label>
+
+				</div>
+				<div class="catalogue__filer__item catalogue__filer__OtherOptions__item">
+					<input type="checkbox" class="checkboxCastom"  name="Fresh " id="Fresh " >
+					<label for="Fresh ">Приток свежего воздуха</label>
+
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <div class="section section__filterTop">
 	<div class="container">
 		<div class="catalogue__title section__title">Фанкойлы<span class="catalogue__title__quantity" >72 товара</span></div>
@@ -12,6 +151,27 @@
 				<a href="#" class="tilter__top__type__item">Напольно-потолочные</a>
 				<a href="#" class="tilter__top__type__item">Настенные</a>
 			</div>
+			<div class="swiper-container tilter__top__type__mob">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"> 
+						<a href="#" class="tilter__top__type__item">Канальные</a>
+
+					</div>
+					<div class="swiper-slide"> 
+						<a href="#" class="tilter__top__type__item">Кассетные</a>
+						
+					</div>
+					<div class="swiper-slide"> 
+						<a href="#" class="tilter__top__type__item">Напольно-потолочные</a>
+					</div>
+					<div class="swiper-slide"> 
+						<a href="#" class="tilter__top__type__item">Настенные</a>
+					</div>
+
+				</div>
+			</div>
 			<div class="filter__top__cost">
 				<div class="filter__top__button">
 					 <div class="filter__top__button__title">Фильтр</div>
@@ -20,7 +180,7 @@
 				<div class="filter__top__cost__select">
 					<label for="topСostSelect"></label>
 					<select name="cost" id="topСostSelect">
-							<option value="">По цене</option>
+							<option value="" selected disabled>По цене</option>
 							<option value="cheaper">Дешевле</option>
 							<option value="dearly">Дороже</option>
 							<option value="date">По дате</option>
@@ -168,7 +328,7 @@
 				</div>
 			</div>
 			<div class="catalogue__cards">
-				<div class="section__publications">
+				<div class="section__publications section__publications__cards">
 						<div class="publiction__expanded">
 							<div class="publiction__expanded__item">
 								<div class="publiction__expanded__item__desc">
@@ -181,8 +341,9 @@
 										egestas ac, consequat sed nunc. Quisque non quam nec dolor euismod maximus. Nam sem erat, scelerisque eget
 										odio eget, molestie dapibus magna.</div>
 								</div>
-								<img src="images/dist/publiction__expanded__item__img__cards.svg" alt="publiction"
-									class="publiction__expanded__item__img">
+								<img src="images/dist/publiction__expanded__item__img__cards.svg" alt="publiction" class="publiction__expanded__item__img">
+									<img src="images/dist/publiction__expanded__item__img__cards__2.svg" alt="publiction"
+									class="publiction__expanded__item__img publiction__expanded__item__img__2">
 							</div>
 						</div>
 				</div>
@@ -530,8 +691,19 @@
 						</div>
 					</a>
 				</div>
+				<div class="section section__pagination">
+					<div class="pagination__button__prev">Назад</div>			
+					<div id="pagination">
+						<a href="#" class="pagination__item">1</a>
+						<a href="#" class="pagination__item">2</a>
+						<a href="#" class="pagination__item pagination__item__active">3</a>
+						<a href="#" class="pagination__item ">4</a>
+					</div>
+					<div class="pagination__button__next">Вперед</div>
+				</div>
 			</div>
 		</div>
+
 	</div>
 </div>
 <!--#include virtual="/parts/publictionExpanded.html" -->
