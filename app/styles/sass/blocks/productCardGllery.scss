@@ -1,0 +1,94 @@
+
+.gallery-main {
+  width: 600px;
+  height: 505px;
+	overflow: hidden;
+	.swiper-slide{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background: #FFFFFF;
+		border: 1px solid #E6E6EB;
+		img {
+			display: flex;
+			position: relative;
+			object-fit: cover;
+			object-position: 50% 50%;
+		}
+	}
+  .swiper-button {
+    &-prev,
+    &-next {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      top: auto;
+      left: auto;
+      height: 75px;
+      width: 40px;
+      color: #e9e9e9;
+      background: #1e1e1e;
+
+      &::after {
+        font-size: 12px;
+      }
+    }
+
+    &-prev {
+      right: 40px;
+      border-right: 1px solid #e9e9e9;
+    }
+  }
+}
+
+
+.gallery-thumbs {
+  order: -1;
+  width: 85px;
+  height: 505px;
+	background: #FFFFFF;
+	overflow: hidden;
+
+  margin-right: 15px;
+  // padding-left: 15px;
+
+  .swiper-slide {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background: #FFFFFF;
+		border: 1px solid #E6E6EB;
+    img {
+			display: flex;
+			position: relative;
+			object-fit: cover;
+			object-position: 50% 50%;
+    }
+
+    &-active {
+      opacity: 0.9;
+    }
+
+    &-thumb-active {
+      opacity: 1;
+
+      // img {
+      //   margin-left: -15px;
+      // }
+    }
+  }
+}
+
+
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    right: -50%;
+  }
+}

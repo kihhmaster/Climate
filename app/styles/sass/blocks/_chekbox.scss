@@ -254,3 +254,148 @@
 
 // 	color: #1D1D1F;
 // }
+
+.checkboxCastomProductCard {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkboxCastomProductCard+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.catalogue__filer__item .checkboxCastomProductCard+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.checkboxCastomProductCard+label::after {
+  content: '';
+  display: inline-block;
+	position: absolute;
+	right: 0;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  flex-grow: 0;
+	border: 1px solid #E6E6EB;
+	border-radius: 3px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.checkboxCastomProductCard#white+label::after {
+  background-image: url(#{$assetImages}/radioCastom__3.svg);
+}
+.checkboxCastomProductCard#black+label::after {
+  background-image: url(#{$assetImages}/radioCastom__1.svg);
+}
+.checkboxCastomProductCard#gray+label::after {
+  background-image: url(#{$assetImages}/radioCastom__2.svg);
+}
+.checkboxCastomProductCard:checked+label::after {
+  border-color: #7593FA;
+}
+
+/* стили при наведении курсора на checkbox */
+.checkboxCastomProductCard:not(:disabled):not(:checked)+label:hover::after {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+// .checkboxCastomProductCard:not(:disabled):active+label::after {
+//   background-color: #b3d7ff;
+//   border-color: #b3d7ff;
+// }
+/* стили для чекбокса, находящегося в фокусе */
+// .checkboxCastomProductCard:focus+label::after {
+//   box-shadow: 0 0 0 0.001rem rgba(0, 123, 255, 0.25);
+// }
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+// .checkboxCastomProductCard:focus:not(:checked)+label::after {
+//   border-color: #7593FA;
+// }
+// /* стили для чекбокса, находящегося в состоянии disabled */
+// .checkboxCastomProductCard:disabled+label::before {
+//   background-color: #e9ecef;
+// }
+
+
+
+.checkboxCastomArea {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkboxCastomArea+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.catalogue__filer__item .checkboxCastomArea+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+	width: 48px;
+	height: 32px;
+	text-align: center;
+	justify-content: center;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 170%;
+	letter-spacing: 0.03em;
+	color: #1D1D1F;
+}
+.checkboxCastomArea+label::after {
+  content: '';
+  display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 48px;
+	height: 32px;
+  flex-shrink: 0;
+  flex-grow: 0;
+	border: 1px solid #E6E6EB;
+	border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.checkboxCastomArea#white+label::after {
+  background-image: url(#{$assetImages}/radioCastom__3.svg);
+}
+.checkboxCastomArea#black+label::after {
+  background-image: url(#{$assetImages}/radioCastom__1.svg);
+}
+.checkboxCastomArea#gray+label::after {
+  background-image: url(#{$assetImages}/radioCastom__2.svg);
+}
+.checkboxCastomArea:checked+label::after {
+  border-color: #7593FA;
+}
+
+/* стили при наведении курсора на checkbox */
+.checkboxCastomArea:not(:disabled):not(:checked)+label:hover::after {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+// .checkboxCastomProductCard:not(:disabled):active+label::after {
+//   background-color: #b3d7ff;
+//   border-color: #b3d7ff;
+// }
+/* стили для чекбокса, находящегося в фокусе */
+// .checkboxCastomProductCard:focus+label::after {
+//   box-shadow: 0 0 0 0.001rem rgba(0, 123, 255, 0.25);
+// }
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+// .checkboxCastomProductCard:focus:not(:checked)+label::after {
+//   border-color: #7593FA;
+// }
+// /* стили для чекбокса, находящегося в состоянии disabled */
+// .checkboxCastomProductCard:disabled+label::before {
+//   background-color: #e9ecef;
+// }

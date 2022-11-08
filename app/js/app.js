@@ -1,8 +1,8 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 import '~/node_modules/jquery/dist/jquery.min.js'
-import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode } from 'swiper'
-Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode] )
+import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs } from 'swiper'
+Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs] )
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -158,5 +158,40 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
+
+
+	var galleryThumbs = new Swiper(".gallery-thumbs", {
+		centeredSlides: true,
+		centeredSlidesBounds: true,
+		slidesPerView: 5,
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		direction: 'vertical',
+		spaceBetween: 16,
+	});
+	
+	var galleryMain = new Swiper(".gallery-main", {
+		// watchOverflow: true,
+		// watchSlidesVisibility: true,
+		// watchSlidesProgress: true,
+		// preventInteractionOnTransition: true,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		thumbs: {
+			swiper: galleryThumbs
+		}
+	});
+	
+	galleryMain.on('slideChangeTransitionStart', function() {
+		galleryThumbs.slideTo(galleryMain.activeIndex);
+	});
+	
+	galleryThumbs.on('transitionStart', function(){
+		galleryMain.slideTo(galleryThumbs.activeIndex);
+	});
 
 })

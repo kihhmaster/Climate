@@ -9,14 +9,17 @@
 		max-width: 680px
 	.categories__item__title
 		white-space: nowrap
-//`@media (max-width:  1200px) { ...}
+//`@media (max-width:  1300px) { ...}
+@media (max-width: 1300px)
+	.newOffer__item
+		margin: 10px
+	.newOffer__lists
+		justify-content: center
 @media (max-width: 1250px)
 	.newOffer__lists
 		justify-content: center
 //`@media (max-width:  1200px) { ...}
 @media (max-width: 1200px)
-	.breadCrumbs
-		margin-top: 80px
 	// .footer__lists__catalog,.footer__lists__services,.footer__lists__company
 	// 	padding-left: 30px
 	.catalogue__main
@@ -70,8 +73,6 @@
 		
 //`@media (max-width: 992px) { ...}
 @media (max-width: 992px)
-	.breadCrumbs
-		margin-top: 60px
 	.catalogue__filer__wrap
 		display: none
 	.filter__top
@@ -165,11 +166,23 @@
 		display: none
 //`@media (max-width: 768px) { ...}
 @media (max-width: 768px)
+	.section__topMenu,.section__topMenuWrapp
+		height: 48px
+	.topMenu__logo
+		margin-top: 10px
+		margin-bottom: 10px
+		position: relative
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	.topMenu__logo__img
+		width: 120px
+		margin-top: 5px
 	.section__topMenuWrapp
 		padding-left: 0px
 		padding-right: 0px
 	.breadCrumbs
-		margin-top: 50px
+		margin-top: 40px
 	.section.section__filterTop
 		padding-top: 32px
 		padding-bottom: 32px
@@ -237,7 +250,7 @@
 		padding-top: 35px
 		padding-bottom: 35px
 	.categories
-		padding-top: 90px
+		padding-top: 40px
 		flex-flow: row wrap
 		justify-content: center 
 	.categories__item
