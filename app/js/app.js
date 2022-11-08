@@ -5,30 +5,55 @@ import { Swiper, Parallax, Mousewheel, Pagination, Scrollbar, Navigation, Contro
 Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controller, Autoplay, FreeMode, Thumbs] )
 
 document.addEventListener('DOMContentLoaded', () => {
+	var tabNavs = document.querySelectorAll(".nav-tab");
+	var tabPanes = document.querySelectorAll(".tab-pane");
+  if(tabNavs !==null & tabPanes !==null) {
+		tabClick() 
+	}
+	function tabClick() {
+		for (var i = 0; i < tabNavs.length; i++) {
+
+			tabNavs[i].addEventListener("click", function(e){
+				e.preventDefault();
+				var activeTabAttr = e.target.getAttribute("data-tab");
+	
+				for (var j = 0; j < tabNavs.length; j++) {
+					var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+	
+					if (activeTabAttr === contentAttr) {
+						tabNavs[j].classList.add("active");
+						tabPanes[j].classList.add("active"); 
+					} else {
+						tabNavs[j].classList.remove("active");
+						tabPanes[j].classList.remove("active");
+					}
+				};
+			});
+		}
+	}
 
 	//swiper-container
 	const swiperSuggestion = new Swiper('.swiper__suggestion', {
-		slidesPerView: 4,
-		spaceBetween: 15,
+		slidesPerView: "auto",
+		spaceBetween: 20,
 		loop: false,
 		pagination: true,
 		pagination: {
 			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
 		},
 		navigation: {
 			nextEl: '.swiper-button-next__suggestion',
 			prevEl: '.swiper-button-prev__suggestion',
 		},
-		watchOverflow: true,
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
-		preventInteractionOnTransition: true,
-		// breakpoints: {
-		// 	// when window width is >= 480px
-		// 	1440: {
-		// 		slidesPerView: 2,
-		// 	},
-		// }
+		breakpoints: {
+			// when window width is >= 480px
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 30
+			},
+		}
 	
 	})
 	const newOfferSliderMob = new Swiper('.newOffer__sliderMob', {
@@ -207,7 +232,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 		thumbs: {
 			swiper: galleryThumbs
-		}
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		// breakpoints: {
+		// 	// when window width is >= 480px
+		// 	992: {
+		// 		slidesPerView: 2.2,
+		// 		spaceBetween: 30
+		// 	},
+		// }
 	});
 	
 	galleryMain.on('slideChangeTransitionStart', function() {

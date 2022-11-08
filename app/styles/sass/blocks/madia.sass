@@ -1,6 +1,12 @@
 
-//`@media (max-width: 1400px) { ...}
+//`@media (max-width: 1400px)  ...
 @media (max-width: 1440px)
+	.productCard__desc
+		padding-left: 50px
+	.productCard__desc__button
+		position: absolute
+		left: 0px
+		top: 10px
 	.footer__lists__pollicy
 		padding-left: 0
 	.topMenu__contacts
@@ -9,7 +15,7 @@
 		max-width: 680px
 	.categories__item__title
 		white-space: nowrap
-//`@media (max-width:  1300px) { ...}
+//`@media (max-width:  1300px)  ...
 @media (max-width: 1300px)
 	.newOffer__item
 		margin: 10px
@@ -18,10 +24,48 @@
 @media (max-width: 1250px)
 	.newOffer__lists
 		justify-content: center
-//`@media (max-width:  1200px) { ...}
+//`@media (max-width:  1200px)  ...
 @media (max-width: 1200px)
-	// .footer__lists__catalog,.footer__lists__services,.footer__lists__company
-	// 	padding-left: 30px
+	.swiper__suggestion__control__wrapp
+		justify-content: flex-start
+		bottom: 18px
+		left: -12px
+		right: auto
+		top: auto
+
+	.swiper__suggestion
+		padding-bottom: 60px
+		.swiper-slide
+			width: 293px
+	.section.section__featuresAticle
+		padding-top: 0
+	.featuresAticle
+		justify-content: center
+	.featuresAticle__img
+		display: none
+	.featuresAticle__desc__title
+		margin-bottom: 32px
+	.featuresAticle__desc__text
+		margin-top: 32px
+	.featuresAticle__img.featuresAticle__img__mob
+		display: flex
+	.featuresAticle
+		.featuresAticle__desc
+			margin: 0
+	.featuresAticle.featuresAticle__revers
+		.featuresAticle__desc
+			margin-right: 0
+	.productCard__specific__buttons
+		flex-flow: column nowrap
+		.productCard__specific__button__order
+			max-width: 100%
+			margin-left: 0
+			margin-top: 24px
+	.productCard__gllery
+		max-width: 60vw
+		.swiper-slide
+			img
+				width: 100%
 	.catalogue__main
 		.cards
 			justify-content: center
@@ -71,8 +115,75 @@
 			&::after
 				right: 3px
 		
-//`@media (max-width: 992px) { ...}
+//`@media (max-width: 1048px)  ...
+@media (max-width: 1048px)
+	.features__item__leble
+		display: none
+	.features__item
+		padding-bottom: 0
+	.section.section__featuresAticle
+		padding-top: 0
+//`@media (max-width: 992px)  ...
 @media (max-width: 992px)
+	.features__item
+		margin-right: 20px
+
+	.productDesc__tab__content
+		.tab-pane
+			padding-top: 32px
+		.productDesc__tab__content____desc
+			margin-top: 20px
+	.productDesc__tabs
+		position: relative
+		overflow-x: auto
+		justify-content: flex-start
+		&::-webkit-scrollbar
+			height: 2px
+			background: #6C6C77
+		&::-webkit-scrollbar-track 
+			background: #d2d2d7
+			height: 8px
+		&::-webkit-scrollbar-thumb
+			background-color: #8b8b91
+			border-radius: 20px
+			border: 3px solid #ffffff00
+		.nav-tab
+			margin-bottom: 8px
+			white-space: nowrap
+	.productCard__desc_title,.productCard__desc__series
+		font-size: 24px
+	.productCard__desc_title
+		white-space: nowrap
+		width: 100%
+		position: relative
+	.productCard__gllery
+		max-width: 50vw
+		.gallery-main .swiper-slide
+			padding: 20px
+			img
+				object-fit: contain
+				width: 100%
+				height: 100%
+		.gallery-main
+			.swiper-pagination
+				display: block
+				.swiper-pagination-bullet
+					background: #4F4F56
+					width: 4px
+					height: 4px
+				.swiper-pagination-bullet.swiper-pagination-bullet-active
+					width: 6px
+					height: 6px
+	.productCard__desc
+		width: 70vw
+	.productCard__gllery
+		.gallery-thumbs
+			display: none
+		.gallery-main .swiper-slide
+
+			img
+				height: 100%
+				object-fit: contain 
 	.catalogue__filer__wrap
 		display: none
 	.filter__top
@@ -160,12 +271,102 @@
 		padding: 20px
 	.advantages__header__item__button
 		margin-top: 24px
-//`@media (max-width: 880px) { ...}
+//`@media (max-width: 880px)  ...
 @media (max-width: 880px)
 	.footer__lists__services
 		display: none
-//`@media (max-width: 768px) { ...}
+//`@media (max-width: 768px)  ...
 @media (max-width: 768px)
+	.featuresAticle
+		margin-bottom: 40px
+	.featuresAticle__desc__title
+		margin-bottom: 24px
+		font-size: 18px
+	.featuresAticle__desc__text
+		margin-top: 16px
+		font-size: 12px
+	.features__item img
+		width: 40px
+		height: 40px
+	.features__item__title
+		font-size: 14px
+	.features__item__desc
+		font-size: 12px
+	.section.section__features
+		padding-top: 0
+	.section.section__productDesc
+		padding-top: 0 !important
+	.productCard__content
+		flex-flow: column nowrap
+	.productCard__gllery
+		width: 100%
+		max-width: 100%	
+		.gallery-main
+			width: 100%
+			height: 320px
+			.swiper-slide
+				padding-bottom: 40px
+	.productCard__cost.productCard__cost__mob
+		margin-top: 23px
+		flex-flow: row nowrap
+		justify-content: space-between
+		align-items: center
+		display: flex
+		.productCard__cost__mob__wrap
+			position: relative
+			display: flex
+			flex-flow: column nowrap
+			justify-content: center
+			align-items: flex-start
+			.productCard__cost__price
+				font-size: 20px
+				line-height: 115%
+			.card__cost__availability
+				justify-content: flex-start
+				font-size: 14px
+		.productCard__cost__article
+			font-size: 14px
+			line-height: 115%
+	.productCard__cost
+		display: none
+	.productCard__desc_title
+		font-size: 18px
+	.productCard__specific__title
+		font-size: 16px
+	.productCard__specific__buttons
+		margin-top: 32px
+		.productCard__specific__button__order 
+			margin-top: 14px
+	.productCard__specific
+		margin-left: 0
+		width: 100%
+		margin-top: 15px
+		.productCard__specific__desc
+			margin-top: 24px
+	.productCard__desc
+		padding-left: 35px
+	.productCard__desc__button
+		top: 5px
+	.productCard__desc__button img
+		width: 24px
+		height: 24px
+	.productCard__desc__series
+		font-size: 18px
+	.section.section__productCard
+		padding-top: 24px
+	.productCard__content
+		margin-top: 24px
+	.productCard__specific__filter .catalogue__filer .catalogue__filer__title.catalogue__filer__color__title
+		font-size: 14px
+		margin-top: 14px
+		margin-bottom: 4px
+	.productCard__specific__filter .catalogue__filer__title.catalogue__filer__area__title
+		margin-top: 14px
+		margin-bottom: 10px
+	.productCard__specific__buttons
+		align-items: center
+		.productCard__specific__button__install, .productCard__specific__button__order
+			max-width: 300px
 	.section__topMenu,.section__topMenuWrapp
 		height: 48px
 	.topMenu__logo
@@ -299,8 +500,30 @@
 		max-width: 100%
 	.section__title
 		font-size: 20px
-//`@media (max-width: 576px) { ...}
+//`@media (max-width: 576px)  ...
 @media (max-width: 576px)
+	.section.section__features
+		padding-bottom: 20px
+	.features__title
+		font-size: 18px
+	.productDesc__tabs
+		.nav-tab
+			font-size: 14px
+			padding-bottom: 8px
+			margin-right: 12px
+			margin-left: 12px
+	.features__lists
+		margin-top: 28px
+		flex-flow: row wrap
+		.features__item
+			width: 160px
+			margin-bottom: 28px
+
+	.productDesc__tab__content
+		.productDesc__tab__content__title
+			font-size: 18px
+		.productDesc__tab__content____desc
+			font-size: 12px
 	.catalogue__filer__wrap__overlay
 		padding: 0 
 		padding-top: 50px
@@ -496,7 +719,7 @@
 	.newOffer__item__desc__right
 		justify-content: flex-start
 		align-items: flex-start
-//`@media (max-width: 420px) { ...}
+//`@media (max-width: 420px)  ...
 @media (max-width: 400px)
 	.categories__item
 		flex: 1 0 150px
@@ -505,6 +728,13 @@
 		padding-right: 0
 	.footer__lists__pollicy__title
 		white-space: normal
+@media (max-width: 375px)
+	.productCard__desc_title
+		font-size: 16px
+	.productCard__desc__series
+		font-size: 16px
+	.productCard__gllery .gallery-main
+		height: 220px
 @media (max-width: 322px)
 
 	.advantages__header__item

@@ -289,15 +289,22 @@
 
 .checkboxCastomProductCard#white+label::after {
   background-image: url(#{$assetImages}/radioCastom__3.svg);
+	border-radius: 3px;
 }
 .checkboxCastomProductCard#black+label::after {
   background-image: url(#{$assetImages}/radioCastom__1.svg);
+	border-radius: 3px;
 }
 .checkboxCastomProductCard#gray+label::after {
   background-image: url(#{$assetImages}/radioCastom__2.svg);
+	border-radius: 3px;
 }
 .checkboxCastomProductCard:checked+label::after {
-  border-color: #7593FA;
+	border-radius: 3px;
+  border: 2px solid transparent;
+	border-image:  linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
+	border-image-slice: 1;
+	
 }
 
 /* стили при наведении курсора на checkbox */
@@ -342,6 +349,7 @@
 	height: 32px;
 	text-align: center;
 	justify-content: center;
+	border-radius: 3px;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -360,6 +368,7 @@
   flex-grow: 0;
 	border: 1px solid #E6E6EB;
 	border-radius: 3px;
+	box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -375,7 +384,10 @@
   background-image: url(#{$assetImages}/radioCastom__2.svg);
 }
 .checkboxCastomArea:checked+label::after {
-  border-color: #7593FA;
+  border: 2px solid transparent;
+	border-image:  linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
+	border-image-slice: 1;
+	border-radius: 3px;
 }
 
 /* стили при наведении курсора на checkbox */
