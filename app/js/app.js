@@ -7,6 +7,30 @@ Swiper.use([ Parallax, Mousewheel,  Pagination, Scrollbar, Navigation, Controlle
 document.addEventListener('DOMContentLoaded', () => {
 
 	//swiper-container
+	const swiperSuggestion = new Swiper('.swiper__suggestion', {
+		slidesPerView: 4,
+		spaceBetween: 15,
+		loop: false,
+		pagination: true,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		navigation: {
+			nextEl: '.swiper-button-next__suggestion',
+			prevEl: '.swiper-button-prev__suggestion',
+		},
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		preventInteractionOnTransition: true,
+		// breakpoints: {
+		// 	// when window width is >= 480px
+		// 	1440: {
+		// 		slidesPerView: 2,
+		// 	},
+		// }
+	
+	})
 	const newOfferSliderMob = new Swiper('.newOffer__sliderMob', {
 		slidesPerView: 1.5,
 		spaceBetween: 15,
