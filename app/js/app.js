@@ -33,7 +33,30 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	//swiper-container
-	const swiperSuggestion = new Swiper('.swiper__suggestion', {
+	const swiperSuggestion = new Swiper('.swiper__suggestion__slide', {
+		slidesPerView: "auto",
+		spaceBetween: 20,
+		loop: false,
+		pagination: true,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next__suggestion',
+			prevEl: '.swiper-button-prev__suggestion',
+		},
+		breakpoints: {
+			// when window width is >= 480px
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 30
+			},
+		}
+	
+	})
+	const seriesProducts = new Swiper('.seriesProducts__slide', {
 		slidesPerView: "auto",
 		spaceBetween: 20,
 		loop: false,
