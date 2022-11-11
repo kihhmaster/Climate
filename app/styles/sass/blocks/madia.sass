@@ -26,13 +26,43 @@
 		justify-content: center
 //`@media (max-width:  1200px)  ...
 @media (max-width: 1200px)
+	.chapter__button__mob
+		display: flex
+		z-index: 2
+	.blogCards__wrap
+		flex-flow: column-reverse nowrap
+		margin-top: 32px
+	.blogs
+		flex-flow: column-reverse nowrap
+		margin-top: 32px
+	.chapter__close.overlay__clase
+		display: flex
+	.chapter
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 10
+		.chapter__list
+			padding-right: 24px
+		.overlay__clase
+			height: 15px
+			width: 15px
+			position: absolute 
+			right: 24px
+			top: 15px	
+			img
+				width: 100%
+				height: 100%
+
 	.swiper__suggestion__control__wrapp
 		justify-content: flex-start
 		bottom: 18px
 		left: -12px
 		right: auto
 		top: auto
-
+	.chapter__button__mob
+		margin-bottom: 16px
 	.swiper__suggestion
 		padding-bottom: 60px
 		.swiper-slide
@@ -125,6 +155,10 @@
 		padding-top: 0
 //`@media (max-width: 992px)  ...
 @media (max-width: 992px)
+	.blog
+		.publication
+			justify-content: center
+			align-items: flex-start
 	.features__item
 		margin-right: 20px
 
@@ -277,6 +311,25 @@
 		display: none
 //`@media (max-width: 768px)  ...
 @media (max-width: 768px)
+	.blog
+		.publication
+			justify-content: center
+			align-items: flex-start
+			.publication__item
+				max-width: 100%
+				margin-right: 0
+				margin-bottom: 52px
+				.publication__item__img
+					height: 375px
+					img
+						object-fit: contain
+						width: 100%
+						height: 100%
+				.publication__item__button.categories__item__button
+					background: #e6e6eb
+					align-self: flex-start
+					margin-right: 0
+					margin-left: 0
 	.swiper__suggestion__control__wrapp
 		bottom: 24px
 	.swiper__suggestion
@@ -524,7 +577,30 @@
 		margin-bottom: 40px
 //`@media (max-width: 576px)  ...
 @media (max-width: 576px)
-
+	.section.section__blog
+		padding-top: 32px
+		padding-bottom: 0
+		.section__title.blog__title
+			text-align: left
+		.section.section__pagination
+			padding-top: 32px
+	.blog
+		.publication
+			.publication__item
+				margin-bottom: 32px
+				.publication__item__img
+					height: 320px
+					img
+						object-fit: contain
+						width: 100%
+						height: 100%
+	.chapter__button__mob
+		max-width: 100%
+	.blog
+		.publication
+			display: flex
+			justify-content: center
+			align-items: flex-start
 	.section.footer
 		padding-bottom: 27px
 	.section.section__features
@@ -754,6 +830,11 @@
 	.footer__lists__pollicy__title
 		white-space: normal
 @media (max-width: 375px)
+	.blog
+		.publication
+			.publication__item
+				.publication__item__img
+					height: 280px
 	.productCard__desc_title
 		font-size: 16px
 	.productCard__desc__series
@@ -761,6 +842,11 @@
 	.productCard__gllery .gallery-main
 		height: 220px
 @media (max-width: 322px)
+	.blog
+		.publication
+			.publication__item
+				.publication__item__img
+					height: 230px
 
 	.advantages__header__item
 		padding-left: 10px

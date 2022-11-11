@@ -229,6 +229,44 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		})
 	}
+	let chapterButtonMob = document.querySelectorAll(".chapter__button__mob")
+	if(chapterButtonMob !== null) {
+		let overlay = document.querySelectorAll(".chapter")
+		let overlayClose = document.querySelectorAll(".overlay__clase")
+
+		function closeOverlay() {
+			overlay.forEach(i => {
+				i.classList.add("animate__fadeOutLeft"); 
+				i.classList.remove("animate__fadeInLeft");
+				setTimeout(()=>{
+					i.classList.remove("active");
+				}, 600)
+			});
+		}
+
+		chapterButtonMob.forEach(item => {
+			item.addEventListener("click", ()=>{
+				overlay.forEach(i => {
+					i.classList.add("active");
+					i.classList.remove("animate__fadeOutLeft");
+					i.classList.add("animate__fadeInLeft");
+				});
+			});
+		});
+		overlayClose.forEach(close => {
+			close.addEventListener("click", ()=>{
+				closeOverlay();
+			});
+		});
+		document.addEventListener('click', (e) => {
+			function hasAncestor(el, ancestor) {
+				return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
+			}
+			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, chapterButtonMob[0])) {
+				closeOverlay();
+			}
+		})
+	}
 
 
 
@@ -268,6 +306,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 		spaceBetween: 30
 		// 	},
 		// }
+	});
+	var blogCardSwiperThumbs = new Swiper(".blog__card__swiper__thumbs", {
+		spaceBetween: 20,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+	var  blogCardSwiper = new Swiper(".blog__card__swiper", {
+		spaceBetween: 20,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		thumbs: {
+			swiper: blogCardSwiperThumbs,
+		},
 	});
 	
 	galleryMain.on('slideChangeTransitionStart', function() {
