@@ -155,6 +155,13 @@
 		padding-top: 0
 //`@media (max-width: 992px)  ...
 @media (max-width: 992px)
+	.askQuestion__form__right
+		margin-left: 0
+		margin-top: 40px
+	.askQuestion__form
+		flex-flow: column nowrap
+	.contacts
+		flex-flow: column nowrap
 	.blog
 		.publication
 			justify-content: center
@@ -311,6 +318,44 @@
 		display: none
 //`@media (max-width: 768px)  ...
 @media (max-width: 768px)
+	.map
+		height: 400px
+		overflow: hidden
+	.legalAdress
+		margin-top: 32px
+	.section.section__contacts,.section.section__askQuestion
+		padding-top: 0
+		padding-bottom: 40px
+	.section.section__askQuestion
+		padding-bottom: 0
+	.askQuestion__form
+		margin-top: 32px
+	.askQuestion__politics
+		flex-flow: column nowrap
+		justify-content: flex-start
+		align-items: flex-start
+	.askQuestion__form__item
+		margin-bottom: 20px
+	.askQuestion__form__button.productCard__specific__button__order
+		margin-left: 0
+		margin-top: 20px
+	.askQuestion
+		padding-top: 30px
+		padding-left: 30px
+		padding-bottom: 30px
+	.contacts__item
+		padding-top: 30px
+		padding-left: 30px
+		padding-bottom: 30px
+	.feedback__titel
+		&::before
+			position: relative
+			left: 0
+			margin-right: 10px
+	.legalAdress__title:before,.askQuestion__title:before
+			position: relative
+			left: 0
+			margin-right: 10px
 	.blog
 		.publication
 			justify-content: center
@@ -577,6 +622,26 @@
 		margin-bottom: 40px
 //`@media (max-width: 576px)  ...
 @media (max-width: 576px)
+	.feedback__titel,.legalAdress__title,.askQuestion__title
+		font-size: 20px
+	.feedback__name,.feedback__adress,.feedback__email
+		font-size: 14px
+	.askQuestion__form__item__textarea__title,.input__file-button-text
+		font-size: 14px
+	.askQuestion__form__item
+		height: 34px
+		margin-bottom: 25px
+		&::placeholder
+			font-size: 14px
+	.askQuestion
+		padding: 30px
+	.feedback__email
+		margin-bottom: 15px
+	.legalAdress__requisites__item
+		font-size: 14px
+	.map
+		height: 320px
+		overflow: hidden
 	.section.section__blog
 		padding-top: 32px
 		padding-bottom: 0
@@ -842,6 +907,9 @@
 	.productCard__gllery .gallery-main
 		height: 220px
 @media (max-width: 322px)
+	.askQuestion,.contacts__item
+		padding-left: 10px
+		padding-right: 10px
 	.blog
 		.publication
 			.publication__item
